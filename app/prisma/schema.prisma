@@ -1,0 +1,582 @@
+// DegreeComplete.in — database schema
+//
+// Two PostgreSQL schemas:
+//   public    — everything a student may ever see, plus operational tables (leads, applications, staff)
+//   internal  — partner commercials. Only the `dc_admin` DB role has grants here (db/roles.sql).
+//               The web tier's public pages connect as `dc_public`, which cannot read this schema at all.
+
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["multiSchema"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  schemas  = ["public", "internal"]
+}
+
+// ───────────────────────────── enums ─────────────────────────────
+
+enum UniversityStatus {
+  ACTIVE
+  ON_HOLD
+  NOT_AVAILABLE
+  NO_FEE_DATA
+  NO_DATA
+  @@schema("public")
+}
+
+enum RecordStatus {
+  DRAFT
+  UNDER_REVIEW
+  VERIFIED
+  PUBLISHED
+  EXPIRED
+  CONFLICT
+  MISSING
+  ON_HOLD
+  NOT_AVAILABLE
+  @@schema("public")
+}
+
+enum Mode {
+  ONLINE
+  DISTANCE
+  @@schema("public")
+}
+
+enum PlanType {
+  STANDARD
+  LOAN
+  SCHOLARSHIP
+  WORKING_PROFESSIONAL
+  EMI
+  @@schema("public")
+}
+
+enum LeadStatus {
+  NEW
+  CONTACTED
+  QUALIFIED
+  COURSE_SELECTED
+  DOCUMENTS_PENDING
+  APPLICATION_STARTED
+  APPLICATION_SUBMITTED
+  ADMISSION_CONFIRMED
+  CLOSED
+  NOT_INTERESTED
+  @@schema("public")
+}
+
+enum ApplicationStatus {
+  APPLICATION_RECEIVED
+  DOCUMENTS_PENDING
+  DOCUMENTS_UNDER_REVIEW
+  DOCUMENTS_VERIFIED
+  APPLICATION_SUBMITTED
+  UNIVERSITY_PROCESSING
+  ADMISSION_CONFIRMED
+  NEXT_STEPS
+  CLOSED
+  @@schema("public")
+}
+
+enum DocumentStatus {
+  PENDING
+  VERIFIED
+  REJECTED
+  @@schema("public")
+}
+
+enum StaffRole {
+  SUPER_ADMIN
+  COUNSELLOR
+  OPERATIONS
+  FINANCE
+  CONTENT_MANAGER
+  @@schema("public")
+}
+
+enum FindingSeverity {
+  ERROR
+  WARNING
+  INFO
+  @@schema("public")
+}
+
+// ───────────────────────────── public: catalogue ─────────────────────────────
+
+model University {
+  id                  String            @id @default(cuid())
+  slug                String            @unique
+  name                String
+  shortName           String?
+  location            String?
+  website             String?
+  description         String?
+  logoUrl             String?
+  status              UniversityStatus  @default(NO_DATA)
+  verificationStatus  RecordStatus      @default(UNDER_REVIEW)
+  registrationFeeText String?
+  examFeeText         String?
+  financingAvailable  Boolean?
+  financingPartners   String?
+  effectiveIntake     String?
+  publishedAt         DateTime?
+  createdAt           DateTime          @default(now())
+  updatedAt           DateTime          @updatedAt
+  programs            Program[]
+  financing           Financing[]
+  leads               Lead[]
+  applications        Application[]
+  commercials         PartnerCommercial[]
+  centerSharing       CenterSharing[]
+
+  @@index([status, verificationStatus])
+  @@schema("public")
+}
+
+model Program {
+  id                String           @id @default(cuid())
+  universityId      String
+  university        University       @relation(fields: [universityId], references: [id], onDelete: Cascade)
+  slug              String                                         // e.g. "mba-online"
+  course            String                                         // canonical: "MBA"
+  courseDisplay     String                                         // as in admission master: "MBA – Power Management"
+  specialization    String?                                        // variant label when the row is a specialization-specific programme
+  mode              Mode
+  level             String                                         // UG | PG | Diploma | PG Diploma | Certificate | PG Certificate | Doctoral | Executive | Integrated | Other
+  durationYears     Float?
+  maxDurationYears  Float?
+  durationText      String?
+  semesters         Int?
+  semestersText     String?
+  eligibilityText   String?                                        // from admission master; admin-editable
+  minMarks          String?
+  selectionText     String?
+  documents         String[]         @default([])                  // required documents, soft copies
+  feeSummary        Json?                                          // master's fee text per column — admin cross-check only
+  totalFeeApprox    Int?                                           // master "Total Course Fee (approx)" — shown only if no verified fee record
+  financingText     String?
+  notes             String?
+  sourceVerification String?
+  sourceFile        String?
+  sourceSheet       String?
+  sourceRef         String?
+  flags             String[]         @default([])
+  overview          String?
+  inMasterCatalogue Boolean          @default(false)
+  status            RecordStatus     @default(UNDER_REVIEW)
+  publishedAt       DateTime?
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
+  specializations   Specialization[]
+  fees              FeeRecord[]
+  leads             Lead[]
+  applications      Application[]
+
+  @@unique([universityId, slug])
+  @@index([course, mode, level, status])
+  @@schema("public")
+}
+
+model Specialization {
+  id        String  @id @default(cuid())
+  programId String
+  program   Program @relation(fields: [programId], references: [id], onDelete: Cascade)
+  name      String
+
+  @@unique([programId, name])
+  @@schema("public")
+}
+
+/// One row per fee line found in a source file, versioned. Only VERIFIED+PUBLISHED rows are public.
+model FeeRecord {
+  id                   String       @id @default(cuid())
+  feeCode              String       @unique                         // FEE-2026-07-0001
+  programId            String
+  program              Program      @relation(fields: [programId], references: [id], onDelete: Cascade)
+  specialization       String?
+  planType             PlanType     @default(STANDARD)
+  currency             String       @default("INR")
+  registrationFee      Int?
+  applicationFee       Int?
+  admissionFee         Int?
+  alumniFee            Int?
+  examFee              Int?
+  examFeeBasis         String?                                      // per_semester | per_year | total | per_subject_reattempt | included | unspecified
+  tuitionPerSemester   Int?
+  tuitionPerYear       Int?
+  tuitionTotal         Int?
+  semesterPlanFee      Int?                                         // payable under semester plan
+  annualPlanFee        Int?                                         // payable under annual plan
+  fullPlanFee          Int?                                         // payable under one-time/full plan
+  totalProgramFee      Int?                                         // headline total as stated by source
+  scholarshipTotalFee  Int?
+  discountPct          Int?
+  installments         Json?                                        // ordered sem/year instalments where source lists them
+  semesters            Int?
+  durationYears        Float?
+  notes                String?
+  eligibilityText      String?
+  sourceFile           String
+  sourceSheet          String
+  sourceRef            String
+  effectiveIntake      String                                       // "2026-07"
+  effectiveFrom        DateTime?
+  effectiveTo          DateTime?
+  version              Int          @default(1)
+  supersedesId         String?      @unique
+  supersedes           FeeRecord?   @relation("FeeVersion", fields: [supersedesId], references: [id])
+  supersededBy         FeeRecord?   @relation("FeeVersion")
+  status               RecordStatus @default(UNDER_REVIEW)
+  flags                String[]     @default([])
+  verifiedById         String?
+  verifiedBy           StaffUser?   @relation(fields: [verifiedById], references: [id])
+  verifiedAt           DateTime?
+  publishedAt          DateTime?
+  createdAt            DateTime     @default(now())
+  updatedAt            DateTime     @updatedAt
+
+  @@index([programId, status])
+  @@index([status, effectiveIntake])
+  @@schema("public")
+}
+
+/// Student-facing financing availability (loan partners, no-cost EMI). No subvention/cost data here.
+model Financing {
+  id             String     @id @default(cuid())
+  universityId   String
+  university     University @relation(fields: [universityId], references: [id], onDelete: Cascade)
+  loanPartners   String?
+  rateOfInterest String?
+  appliesTo      String?
+  noLoan         Boolean    @default(false)
+  details        Json?
+  sourceFile     String
+  sourceSheet    String
+  sourceRef      String
+  status         RecordStatus @default(UNDER_REVIEW)
+
+  @@schema("public")
+}
+
+model ContentPage {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  title     String
+  body      String                                                  // markdown
+  metaTitle String?
+  metaDesc  String?
+  published Boolean  @default(false)
+  updatedAt DateTime @updatedAt
+
+  @@schema("public")
+}
+
+/// Level-wise default eligibility (UGC-DEB norms) from the admission master.
+model EligibilityRule {
+  id          String  @id @default(cuid())
+  levelLabel  String
+  eligibility String
+  minMarks    String?
+  duration    String?
+  extra       String?
+  documents   String[] @default([])
+  sortOrder   Int     @default(0)
+
+  @@schema("public")
+}
+
+model DocumentRequirement {
+  id          String  @id @default(cuid())
+  num         Int
+  name        String
+  requiredFor String?
+  format      String?
+  mandatory   String?
+  remarks     String?
+
+  @@schema("public")
+}
+
+model AdmissionStep {
+  id       String  @id @default(cuid())
+  step     String
+  action   String
+  who      String?
+  timeline String?
+  sortOrder Int    @default(0)
+
+  @@schema("public")
+}
+
+model SiteNote {
+  key       String   @id
+  body      String
+  updatedAt DateTime @updatedAt
+
+  @@schema("public")
+}
+
+model FaqItem {
+  id        String  @id @default(cuid())
+  question  String
+  answer    String
+  category  String?
+  sortOrder Int     @default(0)
+  published Boolean @default(true)
+
+  @@schema("public")
+}
+
+// ───────────────────────────── public: CRM / applications ─────────────────────────────
+
+model StaffUser {
+  id           String       @id @default(cuid())
+  name         String
+  email        String       @unique
+  passwordHash String
+  role         StaffRole
+  active       Boolean      @default(true)
+  createdAt    DateTime     @default(now())
+  leads        Lead[]
+  verifiedFees FeeRecord[]
+  auditLogs    AuditLog[]
+
+  @@schema("public")
+}
+
+model Lead {
+  id                   String      @id @default(cuid())
+  leadCode             String      @unique                         // DC-L-2026-000001
+  name                 String
+  mobile               String
+  whatsapp             String?
+  email                String?
+  city                 String?
+  qualification        String?
+  interestedCourse     String?
+  interestedUniversityId String?
+  interestedUniversity University? @relation(fields: [interestedUniversityId], references: [id])
+  programId            String?
+  program              Program?    @relation(fields: [programId], references: [id])
+  specialization       String?
+  mode                 String?
+  budget               String?
+  objective            String?
+  source               String?                                       // website | find-course | compare | program-page | whatsapp | call
+  campaign             String?
+  utmSource            String?
+  utmMedium            String?
+  utmCampaign          String?
+  landingPath          String?
+  counsellorId         String?
+  counsellor           StaffUser?  @relation(fields: [counsellorId], references: [id])
+  status               LeadStatus  @default(NEW)
+  followUpDate         DateTime?
+  notes                String?
+  createdAt            DateTime    @default(now())
+  updatedAt            DateTime    @updatedAt
+
+  @@index([status, createdAt])
+  @@index([mobile])
+  @@schema("public")
+}
+
+model StudentUser {
+  id           String        @id @default(cuid())
+  name         String
+  mobile       String        @unique
+  email        String?       @unique
+  passwordHash String
+  createdAt    DateTime      @default(now())
+  applications Application[]
+
+  @@schema("public")
+}
+
+model Application {
+  id              String             @id @default(cuid())
+  applicationCode String             @unique                        // DC-2026-000001
+  studentId       String
+  student         StudentUser        @relation(fields: [studentId], references: [id])
+  universityId    String
+  university      University         @relation(fields: [universityId], references: [id])
+  programId       String
+  program         Program            @relation(fields: [programId], references: [id])
+  specialization  String?
+  mode            Mode
+  name            String
+  mobile          String
+  email           String
+  dateOfBirth     DateTime?
+  city            String?
+  qualification   String?
+  status          ApplicationStatus  @default(APPLICATION_RECEIVED)
+  counsellorId    String?
+  createdAt       DateTime           @default(now())
+  updatedAt       DateTime           @updatedAt
+  documents       Document[]
+  events          ApplicationEvent[]
+  messages        Message[]
+
+  @@index([studentId])
+  @@index([status])
+  @@schema("public")
+}
+
+model Document {
+  id            String         @id @default(cuid())
+  applicationId String
+  application   Application    @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+  type          String                                               // ID | PHOTO | QUALIFICATION_CERT | MARKSHEET | OTHER
+  fileName      String
+  storageKey    String                                               // never a public URL
+  mimeType      String
+  sizeBytes     Int
+  status        DocumentStatus @default(PENDING)
+  reviewNote    String?
+  uploadedAt    DateTime       @default(now())
+
+  @@schema("public")
+}
+
+model ApplicationEvent {
+  id            String            @id @default(cuid())
+  applicationId String
+  application   Application       @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+  status        ApplicationStatus
+  note          String?
+  createdBy     String?                                              // staff id or "student"
+  createdAt     DateTime          @default(now())
+
+  @@schema("public")
+}
+
+model Message {
+  id            String      @id @default(cuid())
+  applicationId String
+  application   Application @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+  fromRole      String                                               // student | counsellor
+  body          String
+  createdAt     DateTime    @default(now())
+
+  @@schema("public")
+}
+
+model AuditLog {
+  id         String     @id @default(cuid())
+  actorId    String?
+  actor      StaffUser? @relation(fields: [actorId], references: [id])
+  actorRole  String?
+  action     String                                                  // fee.verify | fee.publish | lead.update | ...
+  entity     String
+  entityId   String
+  before     Json?
+  after      Json?
+  ip         String?
+  createdAt  DateTime   @default(now())
+
+  @@index([entity, entityId])
+  @@schema("public")
+}
+
+/// Ingest findings — the "Data quality" module in admin.
+model DataFinding {
+  id         String          @id @default(cuid())
+  severity   FindingSeverity
+  category   String
+  message    String
+  sheet      String?
+  row        Int?
+  resolved   Boolean         @default(false)
+  resolvedBy String?
+  resolvedAt DateTime?
+  createdAt  DateTime        @default(now())
+
+  @@schema("public")
+}
+
+model Counter {
+  key   String @id                                                   // "application:2026" | "lead:2026"
+  value Int    @default(0)
+
+  @@schema("public")
+}
+
+// ───────────────────────────── internal: commercials (CONFIDENTIAL) ─────────────────────────────
+
+model PartnerCommercial {
+  id                 String     @id @default(cuid())
+  universityId       String
+  university         University @relation(fields: [universityId], references: [id], onDelete: Cascade)
+  channel            String                                          // "College Vidya (Blackboard ERP)" | "Direct"
+  partnerShortCode   String?
+  programScope       String     @default("all programs")
+  payoutShare        String
+  payoutShareIfLoan  String?
+  workingStatus      String
+  effectiveIntake    String
+  sourceFile         String
+  sourceRef          String
+  notes              String?
+  createdAt          DateTime   @default(now())
+
+  @@index([universityId])
+  @@schema("internal")
+}
+
+model CenterSharing {
+  id              String     @id @default(cuid())
+  universityId    String
+  university      University @relation(fields: [universityId], references: [id], onDelete: Cascade)
+  mode            String
+  course          String
+  specialization  String?
+  studentPayYears Json
+  centerPayYears  Json
+  semantics       String?
+  sourceFile      String
+  sourceSheet     String
+  sourceRef       String
+
+  @@schema("internal")
+}
+
+model SubventionNote {
+  id    String @id @default(cuid())
+  sheet String
+  row   Int
+  cells Json
+
+  @@schema("internal")
+}
+
+model InternalNote {
+  id        String   @id @default(cuid())
+  body      String
+  createdAt DateTime @default(now())
+
+  @@schema("internal")
+}
+
+/// Finance module skeleton mirroring the partner invoice cycle described in the annexure.
+model PartnerInvoice {
+  id             String    @id @default(cuid())
+  universitySlug String
+  applicationCode String?
+  kind           String                                              // NEW_ADMISSION | RE_REGISTRATION
+  cycleMonth     String                                              // "2026-09"
+  provisionalAt  DateTime?
+  readyAt        DateTime?
+  invoiceNumber  String?
+  amount         Int?
+  paidAt         DateTime?
+  status         String    @default("PROVISIONAL")                   // PROVISIONAL | READY_TO_GENERATE | SUBMITTED | PAID | ROLLED
+  notes          String?
+  createdAt      DateTime  @default(now())
+
+  @@schema("internal")
+}

@@ -1,0 +1,1103 @@
+[
+  {
+    "slug": "uttaranchal-university",
+    "name": "Uttaranchal University",
+    "location": "Dehradun, Uttarakhand",
+    "website": "https://www.onlineuu.in/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "Executive",
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "BA",
+      "BBA",
+      "BCA",
+      "MBA",
+      "MBA Executive",
+      "MCA"
+    ],
+    "program_count": 6,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "Nil",
+    "exam_fee_text": "₹2,500 per semester",
+    "financing_available": true,
+    "financing_partners": "Fibe / Propelld (0%, 16–18 m)",
+    "starting_total_fee": 72000,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "chandigarh-university",
+    "name": "Chandigarh University",
+    "location": "Mohali, Punjab",
+    "website": "https://www.onlinecu.in/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "BA",
+      "BBA",
+      "BCA",
+      "M.Sc",
+      "MA",
+      "MBA",
+      "MCA"
+    ],
+    "program_count": 15,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹1,000 (Registration / Prospectus)",
+    "exam_fee_text": "Nil",
+    "financing_available": true,
+    "financing_partners": "Avanse / GrayQuest / Finz",
+    "starting_total_fee": 75000,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "sikkim-manipal-university",
+    "name": "Sikkim Manipal University",
+    "location": "Gangtok, Sikkim",
+    "website": "https://www.onlinemanipal.com/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "B.Com",
+      "BA",
+      "BBA",
+      "M.Com",
+      "MA",
+      "MBA",
+      "MCA"
+    ],
+    "program_count": 9,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹500",
+    "exam_fee_text": "Nil",
+    "financing_available": true,
+    "financing_partners": "Propelld / Fibe / TCPL / GrayQuest (No-cost EMI)",
+    "starting_total_fee": 75000,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "manipal-university-jaipur",
+    "name": "Manipal University Jaipur",
+    "location": "Jaipur, Rajasthan",
+    "website": "https://www.onlinemanipal.com/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "B.Com",
+      "BBA",
+      "BCA",
+      "M.Com",
+      "M.Sc",
+      "MA",
+      "MBA",
+      "MCA"
+    ],
+    "program_count": 9,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹500 (application, non-refundable)",
+    "exam_fee_text": "Nil (included)",
+    "financing_available": true,
+    "financing_partners": "Propelld / Fibe / TCPL / GrayQuest (No-cost EMI)",
+    "starting_total_fee": 80000,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "lovely-professional-university",
+    "name": "Lovely Professional University",
+    "location": "Phagwara, Punjab",
+    "website": "https://www.lpuonline.com/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "Diploma",
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "BA",
+      "BBA",
+      "BCA",
+      "Diploma",
+      "M.Com",
+      "M.Sc",
+      "MA",
+      "MBA",
+      "MCA"
+    ],
+    "program_count": 14,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹1,000 (non-refundable)",
+    "exam_fee_text": "₹2,000 per semester (included in fee)",
+    "financing_available": true,
+    "financing_partners": "Avanse / Propelld",
+    "starting_total_fee": 80000,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "upes",
+    "name": "University of Petroleum and Energy Studies (UPES)",
+    "location": "Dehradun, Uttarakhand",
+    "website": "https://upesonline.ac.in/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "PG",
+      "PG Certificate",
+      "UG"
+    ],
+    "course_families": [
+      "BBA",
+      "BCA",
+      "MBA",
+      "MCA",
+      "PG Certificate"
+    ],
+    "program_count": 39,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹1,000",
+    "exam_fee_text": "Nil (₹200 per subject per report)",
+    "financing_available": true,
+    "financing_partners": "Jodo / Khuhu (0%)",
+    "starting_total_fee": 150000,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "dy-patil-university-pune",
+    "name": "Dr. D. Y. Patil Vidyapeeth, Pune",
+    "location": "Pune, Maharashtra",
+    "website": "https://www.dypatilonline.com/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "Certificate",
+      "Executive",
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "BBA",
+      "Certificate",
+      "MBA",
+      "MCA"
+    ],
+    "program_count": 6,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "Nil (₹1,500 admission/processing on portal)",
+    "exam_fee_text": "As per university (sheet shows ₹24,200 – verify)",
+    "financing_available": true,
+    "financing_partners": "Avanse / Propelld / Fibe (0% up to 18 m)",
+    "starting_total_fee": 140000,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "vit",
+    "name": "Vellore Institute of Technology (VIT)",
+    "location": "Vellore, Tamil Nadu",
+    "website": "https://vitonline.in/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "PG"
+    ],
+    "course_families": [
+      "M.Sc",
+      "MBA",
+      "MCA"
+    ],
+    "program_count": 3,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹1,200 (application)",
+    "exam_fee_text": "Included",
+    "financing_available": true,
+    "financing_partners": "University tie-up (18-month EMI, ₹1,999+GST processing)",
+    "starting_total_fee": 160000,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "bennett-university",
+    "name": "Bennett University",
+    "location": "Greater Noida, UP",
+    "website": "https://www.bennettonline.com/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "BBA",
+      "MBA"
+    ],
+    "program_count": 2,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹1,500 (application)",
+    "exam_fee_text": "₹800",
+    "financing_available": true,
+    "financing_partners": "University tie-up (24-month EMI, 1%+GST processing)",
+    "starting_total_fee": 150000,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "gla-university",
+    "name": "GLA University",
+    "location": "Mathura, UP",
+    "website": "https://glaonline.com/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "B.Com (Hons)",
+      "BBA",
+      "BCA",
+      "MBA",
+      "MCA"
+    ],
+    "program_count": 5,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹500 + ₹1,800 Alumni fee (one-time)",
+    "exam_fee_text": "₹1,500 per semester",
+    "financing_available": true,
+    "financing_partners": "Propelld (0%, 24 m)",
+    "starting_total_fee": 60000,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "amity-university",
+    "name": "Amity University Online",
+    "location": "Noida, UP",
+    "website": "https://amityonline.com/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "Certificate",
+      "Integrated",
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "B.Com",
+      "B.Com (Hons)",
+      "B.Com+MBA",
+      "BA",
+      "BBA",
+      "BBA+MBA",
+      "BCA",
+      "BCA+MCA",
+      "Certificate",
+      "M.Com",
+      "M.Sc",
+      "MA",
+      "MBA",
+      "MCA"
+    ],
+    "program_count": 37,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "Nil (₹1,100 application fee on portal)",
+    "exam_fee_text": "Nil",
+    "financing_available": true,
+    "financing_partners": "Fibe / Avanse / TCPL / GrayQuest",
+    "starting_total_fee": 90000,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "amrita-vishwa-vidyapeetham",
+    "name": "Amrita Vishwa Vidyapeetham",
+    "location": "Coimbatore, Tamil Nadu",
+    "website": "https://onlineamrita.com/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "B.Com",
+      "BBA",
+      "BCA",
+      "M.Com",
+      "MBA",
+      "MCA"
+    ],
+    "program_count": 20,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹700 (₹500 application)",
+    "exam_fee_text": "₹2,750 per semester",
+    "financing_available": true,
+    "financing_partners": "Propelld (6%, 12 m – full fee only)",
+    "starting_total_fee": null,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "shoolini-university",
+    "name": "Shoolini University",
+    "location": "Solan, Himachal Pradesh",
+    "website": "https://shoolini.online/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "B.Com (Hons)",
+      "BBA",
+      "BCA",
+      "M.Sc",
+      "MA",
+      "MBA",
+      "MCA"
+    ],
+    "program_count": 8,
+    "status": "no_fee_data",
+    "publishable": false,
+    "registration_fee_text": "₹500 (application)",
+    "exam_fee_text": "Nil / included",
+    "financing_available": true,
+    "financing_partners": "Fibe (0% – full fee only); Pay-after-Placement option",
+    "starting_total_fee": null,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "kurukshetra-university",
+    "name": "Kurukshetra University",
+    "location": "Kurukshetra, Haryana",
+    "website": "https://www.kukonline.in/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "Certificate",
+      "Diploma",
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "B.Com",
+      "BA",
+      "BBA",
+      "Certificate",
+      "Diploma",
+      "M.Com",
+      "MA",
+      "MBA",
+      "MBA Plus",
+      "MCA"
+    ],
+    "program_count": 19,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹1,000",
+    "exam_fee_text": "Nil (included)",
+    "financing_available": false,
+    "financing_partners": "No loan",
+    "starting_total_fee": 60000,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "andhra-university",
+    "name": "Andhra University",
+    "location": "Visakhapatnam, AP",
+    "website": "https://onlineausde.andhrauniversity.edu.in/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "PG"
+    ],
+    "course_families": [
+      "MA",
+      "MBA",
+      "MCA"
+    ],
+    "program_count": 3,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹1,000",
+    "exam_fee_text": "₹1,000 per semester",
+    "financing_available": false,
+    "financing_partners": "No loan",
+    "starting_total_fee": 57500,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "sharda-university",
+    "name": "Sharda University",
+    "location": "Greater Noida, UP",
+    "website": "https://shardaonline.ac.in/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "PG",
+      "PG Certificate",
+      "UG"
+    ],
+    "course_families": [
+      "BA",
+      "BBA",
+      "BCA",
+      "M.Com",
+      "MBA",
+      "MCA",
+      "PG Program"
+    ],
+    "program_count": 7,
+    "status": "on_hold",
+    "publishable": false,
+    "registration_fee_text": "₹500",
+    "exam_fee_text": "₹3,500 per year",
+    "financing_available": true,
+    "financing_partners": "Fibe / Avanse (0% – full fee only)",
+    "starting_total_fee": null,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "vivekananda-global-university",
+    "name": "Vivekananda Global University",
+    "location": "Jaipur, Rajasthan",
+    "website": "https://onlinevgu.com/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "BA",
+      "BBA",
+      "BCA",
+      "M.Sc",
+      "MA",
+      "MBA",
+      "MCA"
+    ],
+    "program_count": 7,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹1,000",
+    "exam_fee_text": "₹1,500 per semester",
+    "financing_available": true,
+    "financing_partners": "Fibe / Liquiloans (0%)",
+    "starting_total_fee": 61200,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "dy-patil-university-navi-mumbai",
+    "name": "D. Y. Patil University, Navi Mumbai",
+    "location": "Navi Mumbai, Maharashtra",
+    "website": "https://dypatiluniversityonline.com/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "BBA",
+      "BBA Plus",
+      "BCA",
+      "MBA",
+      "MBA Plus",
+      "MCA"
+    ],
+    "program_count": 8,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹1,100 (UG) / ₹1,500 (PG)",
+    "exam_fee_text": "Nil",
+    "financing_available": true,
+    "financing_partners": "Propelld / Fibe (0%, 2.5% processing + GST)",
+    "starting_total_fee": 130000,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "parul-university",
+    "name": "Parul University",
+    "location": "Vadodara, Gujarat",
+    "website": "http://www.paruluniversity.online/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "BA",
+      "BBA",
+      "BCA",
+      "M.Com",
+      "M.Sc",
+      "MA",
+      "MBA",
+      "MCA",
+      "MSW"
+    ],
+    "program_count": 10,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹500",
+    "exam_fee_text": "Nil",
+    "financing_available": true,
+    "financing_partners": "Fibe",
+    "starting_total_fee": 40000,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "nmims",
+    "name": "NMIMS (Deemed-to-be University)",
+    "location": "Mumbai, Maharashtra",
+    "website": "https://online.nmims.edu/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "Certificate",
+      "Diploma",
+      "Executive",
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "B.Com",
+      "BBA",
+      "Certificate",
+      "MBA",
+      "MBA (WX)",
+      "PG Diploma"
+    ],
+    "program_count": 7,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹1,200 (registration)",
+    "exam_fee_text": "₹800 per subject per attempt (re-attempt); Project ₹1,500",
+    "financing_available": true,
+    "financing_partners": "Avanse / Propelld / Finz (0%, tenure-based)",
+    "starting_total_fee": 94000,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "galgotias-university",
+    "name": "Galgotias University",
+    "location": "Greater Noida, UP",
+    "website": "https://galgotiasonline.edu.in/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "BBA",
+      "BCA",
+      "M.Com",
+      "MA",
+      "MBA",
+      "MCA"
+    ],
+    "program_count": 7,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹1,200 + ₹1,000 Alumni fee (one-time)",
+    "exam_fee_text": "₹4,000 per year",
+    "financing_available": true,
+    "financing_partners": "Propelld (9%, ₹500 stamp duty – annual)",
+    "starting_total_fee": 50200,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "srm-university",
+    "name": "SRM University",
+    "location": "Chennai, Tamil Nadu",
+    "website": null,
+    "modes": [
+      "Online"
+    ],
+    "levels": [],
+    "course_families": [],
+    "program_count": 0,
+    "status": "not_available",
+    "publishable": false,
+    "registration_fee_text": null,
+    "exam_fee_text": null,
+    "financing_available": null,
+    "financing_partners": null,
+    "starting_total_fee": null,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "op-jindal-global-university",
+    "name": "O.P. Jindal Global University (via upGrad)",
+    "location": "Sonipat / Global",
+    "website": "https://www.upgrad.com/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "Executive"
+    ],
+    "course_families": [
+      "MBA Executive"
+    ],
+    "program_count": 1,
+    "status": "no_data",
+    "publishable": false,
+    "registration_fee_text": "As per partner",
+    "exam_fee_text": "As per partner",
+    "financing_available": true,
+    "financing_partners": "Propelld / No-cost EMI",
+    "starting_total_fee": null,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": false,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "assam-down-town-university",
+    "name": "Assam down town University",
+    "location": "Guwahati, Assam",
+    "website": "https://adtuonline.in/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "BBA",
+      "BCA",
+      "MBA",
+      "MCA"
+    ],
+    "program_count": 4,
+    "status": "no_fee_data",
+    "publishable": false,
+    "registration_fee_text": "₹1,000 (application)",
+    "exam_fee_text": "Included",
+    "financing_available": false,
+    "financing_partners": "–",
+    "starting_total_fee": null,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "alliance-university",
+    "name": "Alliance University",
+    "location": "Bengaluru, Karnataka",
+    "website": "https://allianceonline.edu.in/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "B.Com",
+      "BBA",
+      "MBA"
+    ],
+    "program_count": 3,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹5,000 (registration)",
+    "exam_fee_text": "₹5,000/yr (MBA); ₹3,000/yr (BBA, B.Com)",
+    "financing_available": true,
+    "financing_partners": "University tie-up",
+    "starting_total_fee": 90000,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "christ-university",
+    "name": "CHRIST (Deemed to be University)",
+    "location": "Bengaluru, Karnataka",
+    "website": "https://online.christuniversity.in/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "PG",
+      "UG"
+    ],
+    "course_families": [
+      "B.Com",
+      "BCA",
+      "M.Sc",
+      "MA",
+      "MCA"
+    ],
+    "program_count": 7,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹1,500 + GST (application) + ₹5,000 (admission fee)",
+    "exam_fee_text": "₹3,000 per year",
+    "financing_available": true,
+    "financing_partners": "University tie-up (EMI options)",
+    "starting_total_fee": 75000,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "mangalayatan-university",
+    "name": "Mangalayatan University",
+    "location": "Aligarh, UP",
+    "website": "https://muonline.ac.in/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "Diploma",
+      "PG",
+      "PG Diploma",
+      "UG"
+    ],
+    "course_families": [
+      "B.Com",
+      "B.Lib",
+      "B.Sc",
+      "BA",
+      "BBA",
+      "BCA",
+      "DCA",
+      "Diploma",
+      "M.Com",
+      "M.Lib",
+      "M.Sc",
+      "MA",
+      "MBA",
+      "MBA Plus",
+      "MCA",
+      "PG Diploma",
+      "PGDBM",
+      "PGDCA",
+      "PGDJMC"
+    ],
+    "program_count": 45,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": "₹1,000 (one-time)",
+    "exam_fee_text": "₹2,000–3,000 per year (course-wise)",
+    "financing_available": false,
+    "financing_partners": "–",
+    "starting_total_fee": 22000,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": false,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "golden-gate-university",
+    "name": "Golden Gate University, San Francisco (DBA via upGrad)",
+    "location": "San Francisco, USA",
+    "website": "https://www.upgrad.com/dba-from-golden-gate-university/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "Doctoral"
+    ],
+    "course_families": [
+      "DBA"
+    ],
+    "program_count": 1,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": null,
+    "exam_fee_text": null,
+    "financing_available": null,
+    "financing_partners": null,
+    "starting_total_fee": null,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": false,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "rushford-business-school",
+    "name": "Rushford Business School (DBA via upGrad)",
+    "location": "Switzerland",
+    "website": "https://www.upgrad.com/dba-from-rushford-business-school/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "Doctoral"
+    ],
+    "course_families": [
+      "DBA"
+    ],
+    "program_count": 1,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": null,
+    "exam_fee_text": null,
+    "financing_available": null,
+    "financing_partners": null,
+    "starting_total_fee": null,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": false,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "ssbm-geneva",
+    "name": "Swiss School of Business and Management (Executive DBA via upGrad)",
+    "location": "Geneva, Switzerland",
+    "website": "https://www.upgrad.com/doctor-of-business-administration-ssbm/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "Doctoral"
+    ],
+    "course_families": [
+      "Executive DBA"
+    ],
+    "program_count": 1,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": null,
+    "exam_fee_text": null,
+    "financing_available": null,
+    "financing_partners": null,
+    "starting_total_fee": null,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": false,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "esgci-paris",
+    "name": "ESGCI Paris (DBA via upGrad)",
+    "location": "Paris, France",
+    "website": "https://www.upgrad.com/doctor-of-business-administration-from-esgci/",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "Doctoral"
+    ],
+    "course_families": [
+      "DBA"
+    ],
+    "program_count": 1,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": null,
+    "exam_fee_text": null,
+    "financing_available": null,
+    "financing_partners": null,
+    "starting_total_fee": null,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": false,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "eimt",
+    "name": "European Institute of Technology & Management (EIMT) — DBA",
+    "location": "Switzerland",
+    "website": "https://www.eimt.edu.eu/swiss/doctorate-in-business-administration",
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "Doctoral"
+    ],
+    "course_families": [
+      "DBA"
+    ],
+    "program_count": 1,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": null,
+    "exam_fee_text": null,
+    "financing_available": null,
+    "financing_partners": null,
+    "starting_total_fee": null,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  },
+  {
+    "slug": "birchwood-university",
+    "name": "Birchwood University — DBA",
+    "location": "Florida, USA",
+    "website": null,
+    "modes": [
+      "Online"
+    ],
+    "levels": [
+      "Doctoral"
+    ],
+    "course_families": [
+      "DBA"
+    ],
+    "program_count": 1,
+    "status": "active",
+    "publishable": true,
+    "registration_fee_text": null,
+    "exam_fee_text": null,
+    "financing_available": null,
+    "financing_partners": null,
+    "starting_total_fee": null,
+    "starting_fee_verified": false,
+    "logo_present_in_grid": true,
+    "effective_intake": "2026-07",
+    "last_source_update": "2026-07",
+    "verification_status": "under_review"
+  }
+]

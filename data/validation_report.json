@@ -1,0 +1,466 @@
+{
+  "generated_on": "2026-09-02",
+  "effective_intake": "2026-07",
+  "sources": [
+    "JULY_26_FEE_STRCUTURE.xlsx",
+    "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+    "Partner_Sharing_July_26__1_.pdf",
+    "74f0ad99-a10e-4e66-aa00-962419ffde0c.jpeg",
+    "MIODL_All_Universities_Admission_Master_July2026.xlsx"
+  ],
+  "counts": {
+    "universities_total": 33,
+    "universities_by_status": {
+      "active": 28,
+      "no_fee_data": 2,
+      "on_hold": 1,
+      "not_available": 1,
+      "no_data": 1
+    },
+    "programs": 307,
+    "programs_with_fee_data": 210,
+    "programs_without_fee_data": 97,
+    "specializations": 700,
+    "fee_records": 410,
+    "fee_records_by_status": {
+      "under_review": 397,
+      "on_hold": 8,
+      "conflict": 5
+    },
+    "fee_records_flagged": 49,
+    "fee_rows_by_sheet": {
+      "SMU": 9,
+      "MUJ": 9,
+      "UU": 12,
+      "SHARDA": 8,
+      "KUK": 19,
+      "LPU": 42,
+      "DPU (PUNE)": 7,
+      "VGU": 12,
+      "DPU (NAVI MUMBAI )": 8,
+      "GLA  ": 5,
+      "UPES ": 39,
+      "AMRITA": 21,
+      "ANDHRA ": 3,
+      "NMIMS": 5,
+      "PARUL ": 30,
+      "GALGOTIAS": 7,
+      "AMITY ": 74,
+      "CHANDIGARH UNI.": 15,
+      "BENNETT": 2,
+      "ALLIANCE ": 3,
+      "VIT": 3,
+      "ADTU": 4,
+      "CRIST": 7,
+      "DBA": 6,
+      "OL FEES ": 23,
+      "ODL FEES ": 16,
+      "UG DIPLOMA": 7,
+      "PG DIPLOMA": 14
+    },
+    "findings": 60,
+    "findings_by_severity": {
+      "info": 42,
+      "warning": 16,
+      "error": 2
+    },
+    "programs_with_eligibility": 307,
+    "programs_with_documents": 307,
+    "programs_with_duration": 306,
+    "fee_records_unattached": 0,
+    "eligibility_rules": 18,
+    "document_checklist_items": 20,
+    "admission_steps": 8,
+    "commercial_sentences_scrubbed": 150
+  },
+  "findings": [
+    {
+      "severity": "info",
+      "category": "duplicate",
+      "message": "ALL IN ONE: duplicate program row for vivekananda-global-university / MA / English",
+      "sheet": "ALL IN ONE",
+      "row": 191
+    },
+    {
+      "severity": "info",
+      "category": "duplicate",
+      "message": "ALL IN ONE: duplicate program row for chandigarh-university / BBA / International Business",
+      "sheet": "ALL IN ONE",
+      "row": 402
+    },
+    {
+      "severity": "info",
+      "category": "duplicate",
+      "message": "ALL IN ONE: duplicate program row for vivekananda-global-university / BA / International Relation",
+      "sheet": "ALL IN ONE",
+      "row": 421
+    },
+    {
+      "severity": "warning",
+      "category": "unmapped_university",
+      "message": "LOAN STRUCTURE row 1: cannot map 'UNIVERSITY'",
+      "sheet": "LOAN STRUCTURE",
+      "row": 1
+    },
+    {
+      "severity": "info",
+      "category": "duplicate",
+      "message": "VGU sheet row 9: 'MA' listed twice",
+      "sheet": "VGU",
+      "row": 9
+    },
+    {
+      "severity": "info",
+      "category": "duplicate",
+      "message": "PARUL sheet row 33: duplicate 'MBA / Management Marketing'",
+      "sheet": "PARUL",
+      "row": 33
+    },
+    {
+      "severity": "warning",
+      "category": "conflict",
+      "message": "Alliance MBA: exam fee 5000/yr in ALLIANCE sheet vs 3000.0 in UNIVERSITY sheet",
+      "sheet": "ALLIANCE",
+      "row": 5
+    },
+    {
+      "severity": "error",
+      "category": "missing",
+      "message": "SHOOLINI sheet is empty — partner is 'working' but no fee data exists. All Shoolini programs must show 'Contact us to confirm current fee'.",
+      "sheet": "SHOOLINI"
+    },
+    {
+      "severity": "warning",
+      "category": "missing",
+      "message": "eimt: listed in DBA sheet with strategic partner 'CV' but has no line in the partner annexure — commercial terms unknown.",
+      "sheet": "DBA"
+    },
+    {
+      "severity": "warning",
+      "category": "missing",
+      "message": "birchwood-university: listed in DBA sheet with strategic partner 'CV' but has no line in the partner annexure — commercial terms unknown.",
+      "sheet": "DBA"
+    },
+    {
+      "severity": "warning",
+      "category": "code_collision",
+      "message": "'VU' = Bennett University in the partner annexure, but 'VU' = Vignan's in the logo grid."
+    },
+    {
+      "severity": "warning",
+      "category": "code_collision",
+      "message": "'SU' = Shoolini in the partner annexure, but 'SU' = Sharda in the JULY 26 workbook (Shoolini is 'SCODE' there)."
+    },
+    {
+      "severity": "warning",
+      "category": "code_collision",
+      "message": "'DPU' is used for both D.Y. Patil Pune (partner annexure) and D.Y. Patil Navi Mumbai (UNIVERSITY sheet)."
+    },
+    {
+      "severity": "warning",
+      "category": "conflict",
+      "message": "amrita-vishwa-vidyapeetham: registration fee 500 in UNIVERSITY sheet vs [700] in university sheet",
+      "sheet": "UNIVERSITY"
+    },
+    {
+      "severity": "warning",
+      "category": "conflict",
+      "message": "Sharda: exam fee '3500/yr' (UNIVERSITY sheet) vs 7000 (SHARDA sheet, basis unstated). Partner is ON HOLD anyway.",
+      "sheet": "SHARDA"
+    },
+    {
+      "severity": "warning",
+      "category": "conflict",
+      "message": "Amrita: registration 500 / exam 2500-per-sem (UNIVERSITY sheet) vs registration 700 / exam 2750 (AMRITA sheet footer).",
+      "sheet": "AMRITA"
+    },
+    {
+      "severity": "warning",
+      "category": "conflict",
+      "message": "Parul: loan 'YES (Fibe)' in UNIVERSITY sheet vs 'NO LOAN APPLICABLE' in LOAN STRUCTURE sheet.",
+      "sheet": "LOAN STRUCTURE"
+    },
+    {
+      "severity": "warning",
+      "category": "conflict",
+      "message": "DPU Pune: exam fee '24200' in UNIVERSITY sheet has no basis and does not appear in the DPU (PUNE) sheet.",
+      "sheet": "UNIVERSITY"
+    },
+    {
+      "severity": "info",
+      "category": "naming",
+      "message": "Partner annexure says 'Dy Patil University Mumbai'; fee sheet and website say Navi Mumbai. Stored as D. Y. Patil University, Navi Mumbai."
+    },
+    {
+      "severity": "info",
+      "category": "naming",
+      "message": "Partner annexure says 'Manipal University' for MUJ; the fee sheet is titled Manipal University Online (Jaipur)."
+    },
+    {
+      "severity": "info",
+      "category": "catalogue_gap",
+      "message": "gla-university / B.Com (Hons) (Online) has a fee sheet entry but no row in the ALL IN ONE master catalogue."
+    },
+    {
+      "severity": "info",
+      "category": "catalogue_gap",
+      "message": "amity-university / B.Com (Hons) (Online) has a fee sheet entry but no row in the ALL IN ONE master catalogue."
+    },
+    {
+      "severity": "info",
+      "category": "catalogue_gap",
+      "message": "amity-university / BBA+MBA (Online) has a fee sheet entry but no row in the ALL IN ONE master catalogue."
+    },
+    {
+      "severity": "info",
+      "category": "catalogue_gap",
+      "message": "amity-university / B.Com+MBA (Online) has a fee sheet entry but no row in the ALL IN ONE master catalogue."
+    },
+    {
+      "severity": "info",
+      "category": "catalogue_gap",
+      "message": "amity-university / BCA+MCA (Online) has a fee sheet entry but no row in the ALL IN ONE master catalogue."
+    },
+    {
+      "severity": "info",
+      "category": "catalogue_gap",
+      "message": "amity-university / Certificate (Online) has a fee sheet entry but no row in the ALL IN ONE master catalogue."
+    },
+    {
+      "severity": "info",
+      "category": "catalogue_gap",
+      "message": "vit / MBA (Online) has a fee sheet entry but no row in the ALL IN ONE master catalogue."
+    },
+    {
+      "severity": "info",
+      "category": "catalogue_gap",
+      "message": "vit / M.Sc (Online) has a fee sheet entry but no row in the ALL IN ONE master catalogue."
+    },
+    {
+      "severity": "info",
+      "category": "catalogue_gap",
+      "message": "vit / MCA (Online) has a fee sheet entry but no row in the ALL IN ONE master catalogue."
+    },
+    {
+      "severity": "info",
+      "category": "catalogue_gap",
+      "message": "assam-down-town-university / BBA (Online) has a fee sheet entry but no row in the ALL IN ONE master catalogue."
+    },
+    {
+      "severity": "info",
+      "category": "catalogue_gap",
+      "message": "assam-down-town-university / MBA (Online) has a fee sheet entry but no row in the ALL IN ONE master catalogue."
+    },
+    {
+      "severity": "info",
+      "category": "catalogue_gap",
+      "message": "assam-down-town-university / BCA (Online) has a fee sheet entry but no row in the ALL IN ONE master catalogue."
+    },
+    {
+      "severity": "info",
+      "category": "catalogue_gap",
+      "message": "assam-down-town-university / MCA (Online) has a fee sheet entry but no row in the ALL IN ONE master catalogue."
+    },
+    {
+      "severity": "info",
+      "category": "catalogue_gap",
+      "message": "christ-university / B.Com (Online) has a fee sheet entry but no row in the ALL IN ONE master catalogue."
+    },
+    {
+      "severity": "info",
+      "category": "catalogue_gap",
+      "message": "christ-university / BCA (Online) has a fee sheet entry but no row in the ALL IN ONE master catalogue."
+    },
+    {
+      "severity": "info",
+      "category": "catalogue_gap",
+      "message": "christ-university / MCA (Online) has a fee sheet entry but no row in the ALL IN ONE master catalogue."
+    },
+    {
+      "severity": "info",
+      "category": "catalogue_gap",
+      "message": "christ-university / MA (Online) has a fee sheet entry but no row in the ALL IN ONE master catalogue."
+    },
+    {
+      "severity": "info",
+      "category": "catalogue_gap",
+      "message": "christ-university / M.Sc (Online) has a fee sheet entry but no row in the ALL IN ONE master catalogue."
+    },
+    {
+      "severity": "warning",
+      "category": "logo_without_data",
+      "message": "Jain University (JU): appears in the logo grid but has no partner line and no fee sheet. Do not display."
+    },
+    {
+      "severity": "warning",
+      "category": "logo_without_data",
+      "message": "Manipal Academy of Higher Education (MAHE): appears in the logo grid but has no partner line and no fee sheet. Do not display."
+    },
+    {
+      "severity": "warning",
+      "category": "logo_without_data",
+      "message": "Vignan's (VU): appears in the logo grid but has no partner line and no fee sheet. Do not display."
+    },
+    {
+      "severity": "warning",
+      "category": "logo_without_data",
+      "message": "Subharti (SVSU, Distance): appears in the logo grid but has no partner line and no fee sheet. Do not display."
+    },
+    {
+      "severity": "error",
+      "category": "cycle",
+      "message": "Every record is tagged effective_intake=2026-07 (July 2026 intake). Today is 2026-09-02. Verify each fee against the current admission cycle before publishing."
+    },
+    {
+      "severity": "info",
+      "category": "scope",
+      "message": "ALL IN ONE master catalogue is 100% 'Online'. Distance-mode programs exist only in the Mangalayatan ODL sheet."
+    },
+    {
+      "severity": "info",
+      "category": "fee_crosscheck",
+      "message": "kurukshetra-university / Diploma in Bhagavad Gita (1 yr): master total 21899 vs fee-sheet headline 32848 — admin to pick the student-facing value",
+      "sheet": "KUK"
+    },
+    {
+      "severity": "info",
+      "category": "fee_crosscheck",
+      "message": "kurukshetra-university / Certificate – Internet of Things (6 m): master total 27374 vs fee-sheet headline 21899 — admin to pick the student-facing value",
+      "sheet": "KUK"
+    },
+    {
+      "severity": "info",
+      "category": "fee_crosscheck",
+      "message": "vivekananda-global-university / BA: master total 72000 vs fee-sheet headline 61200 — admin to pick the student-facing value",
+      "sheet": "VGU"
+    },
+    {
+      "severity": "info",
+      "category": "fee_crosscheck",
+      "message": "vivekananda-global-university / BBA: master total 132000 vs fee-sheet headline 112200 — admin to pick the student-facing value",
+      "sheet": "VGU"
+    },
+    {
+      "severity": "info",
+      "category": "fee_crosscheck",
+      "message": "vivekananda-global-university / BCA: master total 132000 vs fee-sheet headline 112200 — admin to pick the student-facing value",
+      "sheet": "VGU"
+    },
+    {
+      "severity": "info",
+      "category": "fee_crosscheck",
+      "message": "vivekananda-global-university / MA: master total 72000 vs fee-sheet headline 61200 — admin to pick the student-facing value",
+      "sheet": "VGU"
+    },
+    {
+      "severity": "info",
+      "category": "fee_crosscheck",
+      "message": "vivekananda-global-university / MBA: master total 150000 vs fee-sheet headline 127500 — admin to pick the student-facing value",
+      "sheet": "VGU"
+    },
+    {
+      "severity": "info",
+      "category": "fee_crosscheck",
+      "message": "vivekananda-global-university / MCA: master total 150000 vs fee-sheet headline 127500 — admin to pick the student-facing value",
+      "sheet": "VGU"
+    },
+    {
+      "severity": "info",
+      "category": "fee_crosscheck",
+      "message": "nmims / BBA: master total 150000 vs fee-sheet headline 131000 — admin to pick the student-facing value",
+      "sheet": "NMIMS"
+    },
+    {
+      "severity": "info",
+      "category": "fee_crosscheck",
+      "message": "nmims / B.Com: master total 108000 vs fee-sheet headline 94000 — admin to pick the student-facing value",
+      "sheet": "NMIMS"
+    },
+    {
+      "severity": "info",
+      "category": "fee_crosscheck",
+      "message": "nmims / MBA (Online): master total 220000 vs fee-sheet headline 196000 — admin to pick the student-facing value",
+      "sheet": "NMIMS"
+    },
+    {
+      "severity": "info",
+      "category": "fee_crosscheck",
+      "message": "mangalayatan-university / BA: master total 40000 vs fee-sheet headline 34000 — admin to pick the student-facing value",
+      "sheet": "MANGALAYATAN"
+    },
+    {
+      "severity": "info",
+      "category": "fee_crosscheck",
+      "message": "mangalayatan-university / MBA: master total 67000 vs fee-sheet headline 63000 — admin to pick the student-facing value",
+      "sheet": "MANGALAYATAN"
+    },
+    {
+      "severity": "info",
+      "category": "fee_crosscheck",
+      "message": "mangalayatan-university / Diploma in Business Administration [UG Diploma]: master total 19000 vs fee-sheet headline 15000 — admin to pick the student-facing value",
+      "sheet": "MANGALAYATAN"
+    },
+    {
+      "severity": "info",
+      "category": "scrubbed_commercial_text",
+      "message": "150 sentences mentioning commercial terms were removed from student-facing text (12 sheets). The removed text is kept only in data/internal (scrub_log) and is visible to Finance in the real app."
+    },
+    {
+      "severity": "info",
+      "category": "source",
+      "message": "Admission master workbook: 307 course rows across 26 tabs; eligibility/duration/documents marked by the owner as verified 03-Sep-2026 from university websites — publish-time re-check still recommended."
+    }
+  ],
+  "flagged_fee_ids": [
+    "FEE-2026-07-0031",
+    "FEE-2026-07-0032",
+    "FEE-2026-07-0033",
+    "FEE-2026-07-0034",
+    "FEE-2026-07-0035",
+    "FEE-2026-07-0036",
+    "FEE-2026-07-0037",
+    "FEE-2026-07-0038",
+    "FEE-2026-07-0039",
+    "FEE-2026-07-0040",
+    "FEE-2026-07-0041",
+    "FEE-2026-07-0045",
+    "FEE-2026-07-0046",
+    "FEE-2026-07-0047",
+    "FEE-2026-07-0171",
+    "FEE-2026-07-0172",
+    "FEE-2026-07-0173",
+    "FEE-2026-07-0174",
+    "FEE-2026-07-0175",
+    "FEE-2026-07-0176",
+    "FEE-2026-07-0177",
+    "FEE-2026-07-0178",
+    "FEE-2026-07-0179",
+    "FEE-2026-07-0180",
+    "FEE-2026-07-0181",
+    "FEE-2026-07-0182",
+    "FEE-2026-07-0183",
+    "FEE-2026-07-0184",
+    "FEE-2026-07-0185",
+    "FEE-2026-07-0186",
+    "FEE-2026-07-0187",
+    "FEE-2026-07-0188",
+    "FEE-2026-07-0189",
+    "FEE-2026-07-0190",
+    "FEE-2026-07-0191",
+    "FEE-2026-07-0197",
+    "FEE-2026-07-0233",
+    "FEE-2026-07-0234",
+    "FEE-2026-07-0328",
+    "FEE-2026-07-0334",
+    "FEE-2026-07-0335",
+    "FEE-2026-07-0336",
+    "FEE-2026-07-0337",
+    "FEE-2026-07-0345",
+    "FEE-2026-07-0346",
+    "FEE-2026-07-0347",
+    "FEE-2026-07-0348",
+    "FEE-2026-07-0349",
+    "FEE-2026-07-0350"
+  ],
+  "phase": 2
+}

@@ -1,0 +1,3136 @@
+{
+  "partner_payouts": [
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "UU",
+      "university_slug": "uttaranchal-university",
+      "program_scope": "all programs",
+      "payout_share": "40%",
+      "payout_share_if_loan": "40%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "CUOL",
+      "university_slug": "chandigarh-university",
+      "program_scope": "all programs",
+      "payout_share": "35%",
+      "payout_share_if_loan": "35%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "SMU",
+      "university_slug": "sikkim-manipal-university",
+      "program_scope": "all programs",
+      "payout_share": "35%",
+      "payout_share_if_loan": "30% (PG) / 27% (UG)",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "MUJ",
+      "university_slug": "manipal-university-jaipur",
+      "program_scope": "all programs",
+      "payout_share": "35%",
+      "payout_share_if_loan": "30% (PG) / 27% (UG)",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "LPU",
+      "university_slug": "lovely-professional-university",
+      "program_scope": "all programs",
+      "payout_share": "45%",
+      "payout_share_if_loan": "45%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "UPES",
+      "university_slug": "upes",
+      "program_scope": "all programs",
+      "payout_share": "35%",
+      "payout_share_if_loan": "35%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "DPU",
+      "university_slug": "dy-patil-university-pune",
+      "program_scope": "all programs",
+      "payout_share": "45%",
+      "payout_share_if_loan": "45%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "VIT",
+      "university_slug": "vit",
+      "program_scope": "all programs",
+      "payout_share": "27.5%",
+      "payout_share_if_loan": "27.5%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "VU",
+      "university_slug": "bennett-university",
+      "program_scope": "all programs",
+      "payout_share": "27.5%",
+      "payout_share_if_loan": "27.5%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "GLA",
+      "university_slug": "gla-university",
+      "program_scope": "all programs",
+      "payout_share": "50%",
+      "payout_share_if_loan": "50%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "AMITY",
+      "university_slug": "amity-university",
+      "program_scope": "all programs",
+      "payout_share": "35%",
+      "payout_share_if_loan": "30%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "Amrita",
+      "university_slug": "amrita-vishwa-vidyapeetham",
+      "program_scope": "all programs",
+      "payout_share": "30%",
+      "payout_share_if_loan": "30%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "SU",
+      "university_slug": "shoolini-university",
+      "program_scope": "all programs",
+      "payout_share": "40%",
+      "payout_share_if_loan": "40%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "KUK",
+      "university_slug": "kurukshetra-university",
+      "program_scope": "all programs",
+      "payout_share": "30%",
+      "payout_share_if_loan": "30%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "Andhra",
+      "university_slug": "andhra-university",
+      "program_scope": "all programs",
+      "payout_share": "30%",
+      "payout_share_if_loan": "30%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "SHARDA",
+      "university_slug": "sharda-university",
+      "program_scope": "all programs",
+      "payout_share": "40%",
+      "payout_share_if_loan": "40%",
+      "working_status": "ON HOLD",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "VGU",
+      "university_slug": "vivekananda-global-university",
+      "program_scope": "all programs",
+      "payout_share": "50%",
+      "payout_share_if_loan": "50%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "DYPATIL",
+      "university_slug": "dy-patil-university-navi-mumbai",
+      "program_scope": "all programs",
+      "payout_share": "30%",
+      "payout_share_if_loan": "30%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "PU",
+      "university_slug": "parul-university",
+      "program_scope": "all programs",
+      "payout_share": "40%",
+      "payout_share_if_loan": "40%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "NMIMS Normal",
+      "university_slug": "nmims",
+      "program_scope": "all programs",
+      "payout_share": "27.5%",
+      "payout_share_if_loan": "27.5%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "NMIMS* (MBA WX)",
+      "university_slug": "nmims",
+      "program_scope": "MBA (WX) only",
+      "payout_share": "17.5%",
+      "payout_share_if_loan": "17.5%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "Galgotiya University",
+      "university_slug": "galgotias-university",
+      "program_scope": "all programs",
+      "payout_share": "50%",
+      "payout_share_if_loan": "50%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "SRM",
+      "university_slug": "srm-university",
+      "program_scope": "all programs",
+      "payout_share": "40%",
+      "payout_share_if_loan": "40%",
+      "working_status": "Not available",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "UPGRAD",
+      "university_slug": "op-jindal-global-university",
+      "program_scope": "all programs",
+      "payout_share": "25%",
+      "payout_share_if_loan": "25%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "ADTU",
+      "university_slug": "assam-down-town-university",
+      "program_scope": "all programs",
+      "payout_share": "40%",
+      "payout_share_if_loan": "40%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "Alliance",
+      "university_slug": "alliance-university",
+      "program_scope": "all programs",
+      "payout_share": "50%",
+      "payout_share_if_loan": "50%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "Christ",
+      "university_slug": "christ-university",
+      "program_scope": "all programs",
+      "payout_share": "20%",
+      "payout_share_if_loan": "20%",
+      "working_status": "Yes",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "UPGRAD",
+      "university_slug": "golden-gate-university",
+      "program_scope": "DBA",
+      "payout_share": "25%",
+      "payout_share_if_loan": "25%",
+      "working_status": "Yes (inferred from UPGRAD line: 'OP Jindal university & DBA Programs')",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A row 23"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "UPGRAD",
+      "university_slug": "rushford-business-school",
+      "program_scope": "DBA",
+      "payout_share": "25%",
+      "payout_share_if_loan": "25%",
+      "working_status": "Yes (inferred from UPGRAD line: 'OP Jindal university & DBA Programs')",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A row 23"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "UPGRAD",
+      "university_slug": "ssbm-geneva",
+      "program_scope": "DBA",
+      "payout_share": "25%",
+      "payout_share_if_loan": "25%",
+      "working_status": "Yes (inferred from UPGRAD line: 'OP Jindal university & DBA Programs')",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A row 23"
+    },
+    {
+      "channel": "College Vidya (Blackboard ERP)",
+      "partner_short_code": "UPGRAD",
+      "university_slug": "esgci-paris",
+      "program_scope": "DBA",
+      "payout_share": "25%",
+      "payout_share_if_loan": "25%",
+      "working_status": "Yes (inferred from UPGRAD line: 'OP Jindal university & DBA Programs')",
+      "effective_intake": "2026-07",
+      "source_file": "Partner_Sharing_July_26__1_.pdf",
+      "source_ref": "Annexure A row 23"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "MUJ",
+      "university_slug": "manipal-university-jaipur",
+      "program_scope": "all programs",
+      "payout_share": "35%",
+      "payout_share_if_loan": "30% (PG) / 27% (UG)",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 1"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "SMU",
+      "university_slug": "sikkim-manipal-university",
+      "program_scope": "all programs",
+      "payout_share": "35%",
+      "payout_share_if_loan": "30% (PG) / 27% (UG)",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 2"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "AU",
+      "university_slug": "amity-university",
+      "program_scope": "all programs",
+      "payout_share": "35%",
+      "payout_share_if_loan": "30%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 3"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "CUOL",
+      "university_slug": "chandigarh-university",
+      "program_scope": "all programs",
+      "payout_share": "35%",
+      "payout_share_if_loan": "35%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 4"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "UU",
+      "university_slug": "uttaranchal-university",
+      "program_scope": "all programs",
+      "payout_share": "40%",
+      "payout_share_if_loan": "40%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 5"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "LPU",
+      "university_slug": "lovely-professional-university",
+      "program_scope": "all programs",
+      "payout_share": "45%",
+      "payout_share_if_loan": "45%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 6"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "UPES",
+      "university_slug": "upes",
+      "program_scope": "all programs",
+      "payout_share": "35%",
+      "payout_share_if_loan": "35%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 7"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "DPU",
+      "university_slug": "dy-patil-university-pune",
+      "program_scope": "all programs",
+      "payout_share": "45%",
+      "payout_share_if_loan": "45%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 8"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "DYPATIL",
+      "university_slug": "dy-patil-university-navi-mumbai",
+      "program_scope": "all programs",
+      "payout_share": "30%",
+      "payout_share_if_loan": "30%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 9"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "VIT",
+      "university_slug": "vit",
+      "program_scope": "all programs",
+      "payout_share": "27.5%",
+      "payout_share_if_loan": "27.5%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 10"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "VU",
+      "university_slug": "bennett-university",
+      "program_scope": "all programs",
+      "payout_share": "27.5%",
+      "payout_share_if_loan": "27.5%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 11"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "GLA",
+      "university_slug": "gla-university",
+      "program_scope": "all programs",
+      "payout_share": "50%",
+      "payout_share_if_loan": "50%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 12"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "AVV",
+      "university_slug": "amrita-vishwa-vidyapeetham",
+      "program_scope": "all programs",
+      "payout_share": "30%",
+      "payout_share_if_loan": "30%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 13"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "SCDOE",
+      "university_slug": "shoolini-university",
+      "program_scope": "all programs",
+      "payout_share": "40%",
+      "payout_share_if_loan": "40%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 14"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "KUK",
+      "university_slug": "kurukshetra-university",
+      "program_scope": "all programs",
+      "payout_share": "30%",
+      "payout_share_if_loan": "30%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 15"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "ANU",
+      "university_slug": "andhra-university",
+      "program_scope": "all programs",
+      "payout_share": "30%",
+      "payout_share_if_loan": "30%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 16"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "SU",
+      "university_slug": "sharda-university",
+      "program_scope": "all programs",
+      "payout_share": "40%",
+      "payout_share_if_loan": "40%",
+      "working_status": "ON HOLD",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 17"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "VGU",
+      "university_slug": "vivekananda-global-university",
+      "program_scope": "all programs",
+      "payout_share": "50%",
+      "payout_share_if_loan": "50%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 18"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "PU",
+      "university_slug": "parul-university",
+      "program_scope": "all programs",
+      "payout_share": "40%",
+      "payout_share_if_loan": "40%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 19"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "NMIMS",
+      "university_slug": "nmims",
+      "program_scope": "all programs",
+      "payout_share": "27.5% (MBA WX: 17.5%)",
+      "payout_share_if_loan": "27.5% (MBA WX: 17.5%)",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 20"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "GU",
+      "university_slug": "galgotias-university",
+      "program_scope": "all programs",
+      "payout_share": "50%",
+      "payout_share_if_loan": "50%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 21"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "UPGRAD",
+      "university_slug": "op-jindal-global-university",
+      "program_scope": "all programs",
+      "payout_share": "25%",
+      "payout_share_if_loan": "25%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 22"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "ADTU",
+      "university_slug": "assam-down-town-university",
+      "program_scope": "all programs",
+      "payout_share": "40%",
+      "payout_share_if_loan": "40%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 23"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "ALU",
+      "university_slug": "alliance-university",
+      "program_scope": "all programs",
+      "payout_share": "50%",
+      "payout_share_if_loan": "50%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 24"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "CHRIST",
+      "university_slug": "christ-university",
+      "program_scope": "all programs",
+      "payout_share": "20%",
+      "payout_share_if_loan": "20%",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 25"
+    },
+    {
+      "channel": "Master Summary (owner workbook)",
+      "partner_short_code": "MU",
+      "university_slug": "mangalayatan-university",
+      "program_scope": "all programs",
+      "payout_share": "Centre-share model (see sheet)",
+      "payout_share_if_loan": "–",
+      "working_status": "Working",
+      "effective_intake": "2026-07",
+      "source_file": "MIODL_All_Universities_Admission_Master_July2026.xlsx",
+      "source_ref": "Master Summary row 26"
+    }
+  ],
+  "center_sharing": [
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "BBA",
+      "specialization": "GENERAL",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 3",
+      "student_pay_years": [
+        22000,
+        21000,
+        21000
+      ],
+      "center_pay_years": [
+        13000,
+        12000,
+        12000
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "BCA",
+      "specialization": "GENERAL",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 4",
+      "student_pay_years": [
+        24000,
+        23000,
+        23000
+      ],
+      "center_pay_years": [
+        14000,
+        13000,
+        13000
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "BA",
+      "specialization": "GENERAL",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 5",
+      "student_pay_years": [
+        14000,
+        13000,
+        13000
+      ],
+      "center_pay_years": [
+        9000,
+        8000,
+        8000
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "DCA",
+      "specialization": "DIPLOMA",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 6",
+      "student_pay_years": [
+        24000
+      ],
+      "center_pay_years": [
+        14000,
+        null,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "MA",
+      "specialization": "ENGLISH",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 7",
+      "student_pay_years": [
+        18000,
+        17000
+      ],
+      "center_pay_years": [
+        11000,
+        10000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "MA",
+      "specialization": "POLITICAL SCIENCE",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 8",
+      "student_pay_years": [
+        18000,
+        17000
+      ],
+      "center_pay_years": [
+        11000,
+        10000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "MA",
+      "specialization": "EDUCATION",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 9",
+      "student_pay_years": [
+        18000,
+        17000
+      ],
+      "center_pay_years": [
+        11000,
+        10000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "MA",
+      "specialization": "PUBLIC ADMINISTRATION",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 10",
+      "student_pay_years": [
+        18000,
+        17000
+      ],
+      "center_pay_years": [
+        11000,
+        10000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "MA",
+      "specialization": "JMC",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 11",
+      "student_pay_years": [
+        18000,
+        17000
+      ],
+      "center_pay_years": [
+        11000,
+        10000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "MCOM",
+      "specialization": "GENERAL",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 12",
+      "student_pay_years": [
+        18000,
+        17000
+      ],
+      "center_pay_years": [
+        11000,
+        10000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "MSC",
+      "specialization": "MATHEMATICS",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 13",
+      "student_pay_years": [
+        28000,
+        27000
+      ],
+      "center_pay_years": [
+        16000,
+        15000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "MBA",
+      "specialization": "MARKETING MANAGEMENT",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 14",
+      "student_pay_years": [
+        34000,
+        33000
+      ],
+      "center_pay_years": [
+        19000,
+        18000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "MBA",
+      "specialization": "HUMAN RESOURCE MANGEMENT",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 15",
+      "student_pay_years": [
+        34000,
+        33000
+      ],
+      "center_pay_years": [
+        19000,
+        18000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "MBA",
+      "specialization": "OPERATION MANAGEMENT",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 16",
+      "student_pay_years": [
+        34000,
+        33000
+      ],
+      "center_pay_years": [
+        19000,
+        18000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "MBA",
+      "specialization": "FINANCE MANAGEMENT",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 17",
+      "student_pay_years": [
+        34000,
+        33000
+      ],
+      "center_pay_years": [
+        19000,
+        18000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "MBA Plus",
+      "specialization": "Digital Marketing",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 18",
+      "student_pay_years": [
+        40000,
+        39000
+      ],
+      "center_pay_years": [
+        22000,
+        21000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "MBA Plus",
+      "specialization": "Supply Chain Management",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 19",
+      "student_pay_years": [
+        40000,
+        39000
+      ],
+      "center_pay_years": [
+        22000,
+        21000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "MBA Plus",
+      "specialization": "Business Analytics",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 20",
+      "student_pay_years": [
+        40000,
+        39000
+      ],
+      "center_pay_years": [
+        22000,
+        21000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "MBA Plus",
+      "specialization": "Information & Technology",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 21",
+      "student_pay_years": [
+        40000,
+        39000
+      ],
+      "center_pay_years": [
+        22000,
+        21000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "MCA",
+      "specialization": "GENERAL",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 22",
+      "student_pay_years": [
+        34000,
+        33000
+      ],
+      "center_pay_years": [
+        19000,
+        18000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "PGDCA",
+      "specialization": "DIPLOMA",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 23",
+      "student_pay_years": [
+        34000
+      ],
+      "center_pay_years": [
+        19000,
+        null,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "PGDJMC",
+      "specialization": "DIPLOMA",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 24",
+      "student_pay_years": [
+        20000
+      ],
+      "center_pay_years": [
+        12000,
+        null,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "PGDBM",
+      "specialization": "DIPLOMA",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "OL FEES ",
+      "source_ref": "row 25",
+      "student_pay_years": [
+        27000
+      ],
+      "center_pay_years": [
+        15000,
+        null,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Distance",
+      "course": "BA",
+      "specialization": "GENERAL",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "ODL FEES ",
+      "source_ref": "row 3",
+      "student_pay_years": [
+        12000,
+        11000,
+        11000
+      ],
+      "center_pay_years": [
+        8000,
+        7000,
+        7000
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Distance",
+      "course": "BA",
+      "specialization": "JMC",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "ODL FEES ",
+      "source_ref": "row 4",
+      "student_pay_years": [
+        18000,
+        17000,
+        17000
+      ],
+      "center_pay_years": [
+        11000,
+        10000,
+        10000
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Distance",
+      "course": "B.COM",
+      "specialization": "General",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "ODL FEES ",
+      "source_ref": "row 5",
+      "student_pay_years": [
+        12000,
+        11000,
+        11000
+      ],
+      "center_pay_years": [
+        8000,
+        7000,
+        7000
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Distance",
+      "course": "B.Sc.",
+      "specialization": "PCB - PCM & ZBC",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "ODL FEES ",
+      "source_ref": "row 6",
+      "student_pay_years": [
+        24000,
+        23000,
+        23000
+      ],
+      "center_pay_years": [
+        14000,
+        13000,
+        13000
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Distance",
+      "course": "MA",
+      "specialization": "SOCIOLOGY",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "ODL FEES ",
+      "source_ref": "row 7",
+      "student_pay_years": [
+        18000,
+        17000
+      ],
+      "center_pay_years": [
+        11000,
+        10000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Distance",
+      "course": "MA",
+      "specialization": "HISTORY",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "ODL FEES ",
+      "source_ref": "row 8",
+      "student_pay_years": [
+        18000,
+        17000
+      ],
+      "center_pay_years": [
+        11000,
+        10000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Distance",
+      "course": "MA",
+      "specialization": "ECONOMICS",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "ODL FEES ",
+      "source_ref": "row 9",
+      "student_pay_years": [
+        18000,
+        17000
+      ],
+      "center_pay_years": [
+        11000,
+        10000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Distance",
+      "course": "MSC",
+      "specialization": "Physics",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "ODL FEES ",
+      "source_ref": "row 10",
+      "student_pay_years": [
+        28000,
+        27000
+      ],
+      "center_pay_years": [
+        16000,
+        15000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Distance",
+      "course": "MSC",
+      "specialization": "Chemistry",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "ODL FEES ",
+      "source_ref": "row 11",
+      "student_pay_years": [
+        28000,
+        27000
+      ],
+      "center_pay_years": [
+        16000,
+        15000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Distance",
+      "course": "MBA",
+      "specialization": "Marketing Management",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "ODL FEES ",
+      "source_ref": "row 12",
+      "student_pay_years": [
+        32000,
+        31000
+      ],
+      "center_pay_years": [
+        18000,
+        17000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Distance",
+      "course": "MBA",
+      "specialization": "Human Resource",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "ODL FEES ",
+      "source_ref": "row 13",
+      "student_pay_years": [
+        32000,
+        31000
+      ],
+      "center_pay_years": [
+        18000,
+        17000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Distance",
+      "course": "MBA",
+      "specialization": "Operations",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "ODL FEES ",
+      "source_ref": "row 14",
+      "student_pay_years": [
+        32000,
+        31000
+      ],
+      "center_pay_years": [
+        18000,
+        17000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Distance",
+      "course": "MBA",
+      "specialization": "Finance Mangement",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "ODL FEES ",
+      "source_ref": "row 15",
+      "student_pay_years": [
+        32000,
+        31000
+      ],
+      "center_pay_years": [
+        18000,
+        17000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Distance",
+      "course": "MBA",
+      "specialization": "Tourism & Hospitality",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "ODL FEES ",
+      "source_ref": "row 16",
+      "student_pay_years": [
+        40000,
+        39000
+      ],
+      "center_pay_years": [
+        22000,
+        21000,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Distance",
+      "course": "B.LIB",
+      "specialization": "General",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "ODL FEES ",
+      "source_ref": "row 17",
+      "student_pay_years": [
+        22000
+      ],
+      "center_pay_years": [
+        13000,
+        null,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Distance",
+      "course": "M.LIB",
+      "specialization": "General",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "ODL FEES ",
+      "source_ref": "row 18",
+      "student_pay_years": [
+        24000
+      ],
+      "center_pay_years": [
+        14000,
+        null,
+        null
+      ],
+      "semantics": "Unconfirmed: 'Center Pay - Sharing' equals reg + exam + 50% of course fee in every row checked. Confirm with partner whether this is the amount remitted to the university or retained by the center."
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "Diploma",
+      "specialization": "Diploma in Business Administration",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "UG DIPLOMA",
+      "source_ref": "row 4",
+      "student_pay_years": [
+        19000
+      ],
+      "center_pay_years": [
+        11000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "Diploma",
+      "specialization": "Diploma in Computer Application-DCA",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "UG DIPLOMA",
+      "source_ref": "row 6",
+      "student_pay_years": [
+        24000
+      ],
+      "center_pay_years": [
+        14000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "Diploma",
+      "specialization": "Diploma in Arts & Humanities",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "UG DIPLOMA",
+      "source_ref": "row 8",
+      "student_pay_years": [
+        15000
+      ],
+      "center_pay_years": [
+        9000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "Diploma",
+      "specialization": "Diploma in Library & Information Science (D.LIS) University Visit",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "UG DIPLOMA",
+      "source_ref": "row 9",
+      "student_pay_years": [
+        21000
+      ],
+      "center_pay_years": [
+        12000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "Diploma",
+      "specialization": "Diploma in Journalism and Mass Communication",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "UG DIPLOMA",
+      "source_ref": "row 11",
+      "student_pay_years": [
+        15000
+      ],
+      "center_pay_years": [
+        9000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "Diploma",
+      "specialization": "Diploma in Commerce & Business Studies",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "UG DIPLOMA",
+      "source_ref": "row 13",
+      "student_pay_years": [
+        15000
+      ],
+      "center_pay_years": [
+        9000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "Diploma",
+      "specialization": "Diploma in Basic Science",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "UG DIPLOMA",
+      "source_ref": "row 15",
+      "student_pay_years": [
+        21000
+      ],
+      "center_pay_years": [
+        12000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "PG Diploma",
+      "specialization": "PG Diploma in Administration and Public Policy",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "PG DIPLOMA",
+      "source_ref": "row 4",
+      "student_pay_years": [
+        19000
+      ],
+      "center_pay_years": [
+        11000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "PG Diploma",
+      "specialization": "PG Diploma in English Literature and Linguistic Studies",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "PG DIPLOMA",
+      "source_ref": "row 5",
+      "student_pay_years": [
+        19000
+      ],
+      "center_pay_years": [
+        11000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "PG Diploma",
+      "specialization": "PG Diploma in Historical Studies and Cultural Perspectives",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "PG DIPLOMA",
+      "source_ref": "row 6",
+      "student_pay_years": [
+        19000
+      ],
+      "center_pay_years": [
+        11000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "PG Diploma",
+      "specialization": "PG Diploma in Sociological Studies",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "PG DIPLOMA",
+      "source_ref": "row 7",
+      "student_pay_years": [
+        19000
+      ],
+      "center_pay_years": [
+        11000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "PG Diploma",
+      "specialization": "PG Diploma in Education",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "PG DIPLOMA",
+      "source_ref": "row 8",
+      "student_pay_years": [
+        19000
+      ],
+      "center_pay_years": [
+        11000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "PG Diploma",
+      "specialization": "PG Diploma in Political Studies",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "PG DIPLOMA",
+      "source_ref": "row 9",
+      "student_pay_years": [
+        19000
+      ],
+      "center_pay_years": [
+        11000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "PG Diploma",
+      "specialization": "PG Diploma in Economics",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "PG DIPLOMA",
+      "source_ref": "row 10",
+      "student_pay_years": [
+        19000
+      ],
+      "center_pay_years": [
+        11000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "PG Diploma",
+      "specialization": "PG Diploma in Library Automation & Networking",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "PG DIPLOMA",
+      "source_ref": "row 11",
+      "student_pay_years": [
+        21000
+      ],
+      "center_pay_years": [
+        12000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "PG Diploma",
+      "specialization": "PG Diploma in Accounts and finance",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "PG DIPLOMA",
+      "source_ref": "row 13",
+      "student_pay_years": [
+        21000
+      ],
+      "center_pay_years": [
+        12000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "PG Diploma",
+      "specialization": "PG Diploma in Business Management",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "PG DIPLOMA",
+      "source_ref": "row 14",
+      "student_pay_years": [
+        27000
+      ],
+      "center_pay_years": [
+        15000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "PG Diploma",
+      "specialization": "PG Diploma in Computer Application",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "PG DIPLOMA",
+      "source_ref": "row 16",
+      "student_pay_years": [
+        34000
+      ],
+      "center_pay_years": [
+        19000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "PG Diploma",
+      "specialization": "PG Diploma in Science (Physics/Chemistry)",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "PG DIPLOMA",
+      "source_ref": "row 18",
+      "student_pay_years": [
+        27000
+      ],
+      "center_pay_years": [
+        15000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "PG Diploma",
+      "specialization": "PG Diploma In Mathmatics",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "PG DIPLOMA",
+      "source_ref": "row 19",
+      "student_pay_years": [
+        27000
+      ],
+      "center_pay_years": [
+        15000
+      ],
+      "semantics": "see OL/ODL note"
+    },
+    {
+      "university_slug": "mangalayatan-university",
+      "mode": "Online",
+      "course": "PG Diploma",
+      "specialization": "PG Diploma in Journalism and Mass Communication",
+      "source_file": "50__FEES_STRUCTURE_MU_OL_AND_ODL__1_.xlsx",
+      "source_sheet": "PG DIPLOMA",
+      "source_ref": "row 21",
+      "student_pay_years": [
+        19000
+      ],
+      "center_pay_years": [
+        11000
+      ],
+      "semantics": "see OL/ODL note"
+    }
+  ],
+  "subvention": [
+    {
+      "sheet": "SUBVENTION CHARGES CALCULATION",
+      "row": 1,
+      "cells": [
+        "DPU PUNE"
+      ]
+    },
+    {
+      "sheet": "SUBVENTION CHARGES CALCULATION",
+      "row": 2,
+      "cells": [
+        "University",
+        "Programme",
+        "Tution Fees",
+        "Subvention Amount"
+      ]
+    },
+    {
+      "sheet": "SUBVENTION CHARGES CALCULATION",
+      "row": 3,
+      "cells": [
+        "DPU_Pune",
+        "BBA",
+        "124800.0",
+        "14395.0"
+      ]
+    },
+    {
+      "sheet": "SUBVENTION CHARGES CALCULATION",
+      "row": 4,
+      "cells": [
+        "MCA",
+        "122200.0",
+        "13860.0"
+      ]
+    },
+    {
+      "sheet": "SUBVENTION CHARGES CALCULATION",
+      "row": 5,
+      "cells": [
+        "MBA",
+        "165200.0",
+        "18751.0"
+      ]
+    },
+    {
+      "sheet": "SUBVENTION CHARGES CALCULATION",
+      "row": 6,
+      "cells": [
+        "MBA (After Discount)",
+        "155200.0",
+        "17761.0"
+      ]
+    },
+    {
+      "sheet": "SUBVENTION CHARGES CALCULATION",
+      "row": 9,
+      "cells": [
+        "VGU Subvention Charges"
+      ]
+    },
+    {
+      "sheet": "SUBVENTION CHARGES CALCULATION",
+      "row": 10,
+      "cells": [
+        "FOR 18 MONTH TENURE",
+        "0.109"
+      ]
+    },
+    {
+      "sheet": "SUBVENTION CHARGES CALCULATION",
+      "row": 11,
+      "cells": [
+        "FOR 24 MONTH TENURE",
+        "0.145"
+      ]
+    },
+    {
+      "sheet": "SUBVENTION CHARGES CALCULATION",
+      "row": 14,
+      "cells": [
+        "Dpu Navi Charges",
+        "Shoolini Subvention Charges",
+        "Lpu Subvention charges"
+      ]
+    },
+    {
+      "sheet": "SUBVENTION CHARGES CALCULATION",
+      "row": 15,
+      "cells": [
+        "Annual - 6.50%",
+        "Full - 10 to 20K changes",
+        "0.1475"
+      ]
+    },
+    {
+      "sheet": "SUBVENTION CHARGES CALCULATION",
+      "row": 16,
+      "cells": [
+        "FULL - 13%"
+      ]
+    },
+    {
+      "sheet": "SUBVENTION CHARGES CALCULATION",
+      "row": 21,
+      "cells": [
+        "CU Subvention Charges",
+        "NMIMS"
+      ]
+    },
+    {
+      "sheet": "SUBVENTION CHARGES CALCULATION",
+      "row": 22,
+      "cells": [
+        "Full - 14 to 17k depneds on program",
+        "MBA (WX)",
+        "400000.0",
+        "53580.0"
+      ]
+    },
+    {
+      "sheet": "SUBVENTION CHARGES CALCULATION",
+      "row": 23,
+      "cells": [
+        "MBA",
+        "220000.0",
+        "29612.0"
+      ]
+    }
+  ],
+  "notes": [
+    "DPU (PUNE) sheet also lists USD fees for international students (rows 6, 11, 15, 22, 28, 33) — not ingested; domestic only.",
+    "DBA golden-gate-university: CV subsidy Yes-20,000/-; strategic partner Upgrad.",
+    "DBA rushford-business-school: CV subsidy Yes-10,000/-; strategic partner Upgrad.",
+    "DBA ssbm-geneva: CV subsidy Yes-10,000/-; strategic partner Upgrad.",
+    "DBA esgci-paris: CV subsidy Yes-10,000/-; strategic partner Upgrad.",
+    "DBA eimt: CV subsidy Yes-10,000/-; strategic partner CV.",
+    "DBA birchwood-university: CV subsidy Yes-10,000/-; strategic partner CV.",
+    "Partner annexure is issued by College Vidya; contact number in the PDF is College Vidya's and must never be shown to students.",
+    "Admission Process step 7 (partner invoicing cycle): Partner invoicing (Auto-Pilot): provisional invoice within 7 days of receipt upload; 'Ready to Generate' on 6th of next month; update invoice no. in ERP; payout by 15th; re-registration payouts monthly within 15 days.",
+    "MUJ row S.No 1: partner payout column = 35% (27% if loan)",
+    "MUJ row S.No 2: partner payout column = 35% (27% if loan)",
+    "MUJ row S.No 3: partner payout column = 35% (27% if loan)",
+    "MUJ row S.No 4: partner payout column = 35% (30% if loan)",
+    "MUJ row S.No 5: partner payout column = 35% (30% if loan)",
+    "MUJ row S.No 6: partner payout column = 35% (30% if loan)",
+    "MUJ row S.No 7: partner payout column = 35% (30% if loan)",
+    "MUJ row S.No 8: partner payout column = 35% (30% if loan)",
+    "MUJ row S.No 9: partner payout column = 35% (30% if loan)",
+    "SMU row S.No 1: partner payout column = 35% (30% if loan)",
+    "SMU row S.No 2: partner payout column = 35% (30% if loan)",
+    "SMU row S.No 3: partner payout column = 35% (27% if loan)",
+    "SMU row S.No 4: partner payout column = 35% (27% if loan)",
+    "SMU row S.No 5: partner payout column = 35% (27% if loan)",
+    "SMU row S.No 6: partner payout column = 35% (30% if loan)",
+    "SMU row S.No 7: partner payout column = 35% (30% if loan)",
+    "SMU row S.No 8: partner payout column = 35% (30% if loan)",
+    "SMU row S.No 9: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 1: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 2: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 3: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 4: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 5: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 6: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 7: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 8: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 9: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 10: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 11: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 12: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 13: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 14: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 15: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 16: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 17: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 18: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 19: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 20: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 21: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 22: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 23: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 24: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 25: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 26: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 27: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 28: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 29: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 30: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 31: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 32: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 33: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 34: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 35: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 36: partner payout column = 35% (30% if loan)",
+    "AMITY row S.No 37: partner payout column = 35%",
+    "CUOL row S.No 1: partner payout column = 35%",
+    "CUOL row S.No 2: partner payout column = 35%",
+    "CUOL row S.No 3: partner payout column = 35%",
+    "CUOL row S.No 4: partner payout column = 35%",
+    "CUOL row S.No 5: partner payout column = 35%",
+    "CUOL row S.No 6: partner payout column = 35%",
+    "CUOL row S.No 7: partner payout column = 35%",
+    "CUOL row S.No 8: partner payout column = 35%",
+    "CUOL row S.No 9: partner payout column = 35%",
+    "CUOL row S.No 10: partner payout column = 35%",
+    "CUOL row S.No 11: partner payout column = 35%",
+    "CUOL row S.No 12: partner payout column = 35%",
+    "CUOL row S.No 13: partner payout column = 35%",
+    "CUOL row S.No 14: partner payout column = 35%",
+    "CUOL row S.No 15: partner payout column = 35%",
+    "UU row S.No 1: partner payout column = 40%",
+    "UU row S.No 2: partner payout column = 40%",
+    "UU row S.No 3: partner payout column = 40%",
+    "UU row S.No 4: partner payout column = 40%",
+    "UU row S.No 5: partner payout column = 40%",
+    "UU row S.No 6: partner payout column = 40%",
+    "LPU row S.No 1: partner payout column = 45%",
+    "LPU row S.No 2: partner payout column = 45%",
+    "LPU row S.No 3: partner payout column = 45%",
+    "LPU row S.No 4: partner payout column = 45%",
+    "LPU row S.No 5: partner payout column = 45%",
+    "LPU row S.No 6: partner payout column = 45%",
+    "LPU row S.No 7: partner payout column = 45%",
+    "LPU row S.No 8: partner payout column = 45%",
+    "LPU row S.No 9: partner payout column = 45%",
+    "LPU row S.No 10: partner payout column = 45%",
+    "LPU row S.No 11: partner payout column = 45%",
+    "LPU row S.No 12: partner payout column = 45%",
+    "LPU row S.No 13: partner payout column = 45%",
+    "LPU row S.No 14: partner payout column = 45%",
+    "UPES row S.No 1: partner payout column = 35%",
+    "UPES row S.No 2: partner payout column = 35%",
+    "UPES row S.No 3: partner payout column = 35%",
+    "UPES row S.No 4: partner payout column = 35%",
+    "UPES row S.No 5: partner payout column = 35%",
+    "UPES row S.No 6: partner payout column = 35%",
+    "UPES row S.No 7: partner payout column = 35%",
+    "UPES row S.No 8: partner payout column = 35%",
+    "UPES row S.No 9: partner payout column = 35%",
+    "UPES row S.No 10: partner payout column = 35%",
+    "UPES row S.No 11: partner payout column = 35%",
+    "UPES row S.No 12: partner payout column = 35%",
+    "UPES row S.No 13: partner payout column = 35%",
+    "UPES row S.No 14: partner payout column = 35%",
+    "UPES row S.No 15: partner payout column = 35%",
+    "UPES row S.No 16: partner payout column = 35%",
+    "UPES row S.No 17: partner payout column = 35%",
+    "UPES row S.No 18: partner payout column = 35%",
+    "UPES row S.No 19: partner payout column = 35%",
+    "UPES row S.No 20: partner payout column = 35%",
+    "UPES row S.No 21: partner payout column = 35%",
+    "UPES row S.No 22: partner payout column = 35%",
+    "UPES row S.No 23: partner payout column = 35%",
+    "UPES row S.No 24: partner payout column = 35%",
+    "UPES row S.No 25: partner payout column = 35%",
+    "UPES row S.No 26: partner payout column = 35%",
+    "UPES row S.No 27: partner payout column = 35%",
+    "UPES row S.No 28: partner payout column = 35%",
+    "UPES row S.No 29: partner payout column = 35%",
+    "UPES row S.No 30: partner payout column = 35%",
+    "UPES row S.No 31: partner payout column = 35%",
+    "UPES row S.No 32: partner payout column = 35%",
+    "UPES row S.No 33: partner payout column = 35%",
+    "UPES row S.No 34: partner payout column = 35%",
+    "UPES row S.No 35: partner payout column = 35%",
+    "UPES row S.No 36: partner payout column = 35%",
+    "UPES row S.No 37: partner payout column = 35%",
+    "UPES row S.No 38: partner payout column = 35%",
+    "UPES row S.No 39: partner payout column = 35%",
+    "DPU PUNE row S.No 1: partner payout column = 45%",
+    "DPU PUNE row S.No 2: partner payout column = 45%",
+    "DPU PUNE row S.No 3: partner payout column = 45%",
+    "DPU PUNE row S.No 4: partner payout column = 45%",
+    "DPU PUNE row S.No 5: partner payout column = 45%",
+    "DPU PUNE row S.No 6: partner payout column = 45%",
+    "DPU NAVI MUMBAI row S.No 1: partner payout column = 30%",
+    "DPU NAVI MUMBAI row S.No 2: partner payout column = 30%",
+    "DPU NAVI MUMBAI row S.No 3: partner payout column = 30%",
+    "DPU NAVI MUMBAI row S.No 4: partner payout column = 30%",
+    "DPU NAVI MUMBAI row S.No 5: partner payout column = 30%",
+    "DPU NAVI MUMBAI row S.No 6: partner payout column = 30%",
+    "DPU NAVI MUMBAI row S.No 7: partner payout column = 30%",
+    "DPU NAVI MUMBAI row S.No 8: partner payout column = 30%",
+    "VIT row S.No 1: partner payout column = 27.5%",
+    "VIT row S.No 2: partner payout column = 27.5%",
+    "VIT row S.No 3: partner payout column = 27.5%",
+    "BENNETT row S.No 1: partner payout column = 27.5%",
+    "BENNETT row S.No 2: partner payout column = 27.5%",
+    "GLA row S.No 1: partner payout column = 50%",
+    "GLA row S.No 2: partner payout column = 50%",
+    "GLA row S.No 3: partner payout column = 50%",
+    "GLA row S.No 4: partner payout column = 50%",
+    "GLA row S.No 5: partner payout column = 50%",
+    "AMRITA row S.No 1: partner payout column = 30%",
+    "AMRITA row S.No 2: partner payout column = 30%",
+    "AMRITA row S.No 3: partner payout column = 30%",
+    "AMRITA row S.No 4: partner payout column = 30%",
+    "AMRITA row S.No 5: partner payout column = 30%",
+    "AMRITA row S.No 6: partner payout column = 30%",
+    "AMRITA row S.No 7: partner payout column = 30%",
+    "AMRITA row S.No 8: partner payout column = 30%",
+    "AMRITA row S.No 9: partner payout column = 30%",
+    "AMRITA row S.No 10: partner payout column = 30%",
+    "AMRITA row S.No 11: partner payout column = 30%",
+    "AMRITA row S.No 12: partner payout column = 30%",
+    "AMRITA row S.No 13: partner payout column = 30%",
+    "AMRITA row S.No 14: partner payout column = 30%",
+    "AMRITA row S.No 15: partner payout column = 30%",
+    "AMRITA row S.No 16: partner payout column = 30%",
+    "AMRITA row S.No 17: partner payout column = 30%",
+    "AMRITA row S.No 18: partner payout column = 30%",
+    "AMRITA row S.No 19: partner payout column = 30%",
+    "AMRITA row S.No 20: partner payout column = 30%",
+    "SHOOLINI row S.No 1: partner payout column = 40%",
+    "SHOOLINI row S.No 2: partner payout column = 40%",
+    "SHOOLINI row S.No 3: partner payout column = 40%",
+    "SHOOLINI row S.No 4: partner payout column = 40%",
+    "SHOOLINI row S.No 5: partner payout column = 40%",
+    "SHOOLINI row S.No 6: partner payout column = 40%",
+    "SHOOLINI row S.No 7: partner payout column = 40%",
+    "SHOOLINI row S.No 8: partner payout column = 40%",
+    "KUK row S.No 1: partner payout column = 30%",
+    "KUK row S.No 2: partner payout column = 30%",
+    "KUK row S.No 3: partner payout column = 30%",
+    "KUK row S.No 4: partner payout column = 30%",
+    "KUK row S.No 5: partner payout column = 30%",
+    "KUK row S.No 6: partner payout column = 30%",
+    "KUK row S.No 7: partner payout column = 30%",
+    "KUK row S.No 8: partner payout column = 30%",
+    "KUK row S.No 9: partner payout column = 30%",
+    "KUK row S.No 10: partner payout column = 30%",
+    "KUK row S.No 11: partner payout column = 30%",
+    "KUK row S.No 12: partner payout column = 30%",
+    "KUK row S.No 13: partner payout column = 30%",
+    "KUK row S.No 14: partner payout column = 30%",
+    "KUK row S.No 15: partner payout column = 30%",
+    "KUK row S.No 16: partner payout column = 30%",
+    "KUK row S.No 17: partner payout column = 30%",
+    "KUK row S.No 18: partner payout column = 30%",
+    "KUK row S.No 19: partner payout column = 30%",
+    "ANDHRA row S.No 1: partner payout column = 30%",
+    "ANDHRA row S.No 2: partner payout column = 30%",
+    "ANDHRA row S.No 3: partner payout column = 30%",
+    "SHARDA row S.No 1: partner payout column = 40% (ON HOLD)",
+    "SHARDA row S.No 2: partner payout column = 40% (ON HOLD)",
+    "SHARDA row S.No 3: partner payout column = 40% (ON HOLD)",
+    "SHARDA row S.No 4: partner payout column = 40% (ON HOLD)",
+    "SHARDA row S.No 5: partner payout column = 40% (ON HOLD)",
+    "SHARDA row S.No 6: partner payout column = 40% (ON HOLD)",
+    "SHARDA row S.No 7: partner payout column = 40% (ON HOLD)",
+    "VGU row S.No 1: partner payout column = 50%",
+    "VGU row S.No 2: partner payout column = 50%",
+    "VGU row S.No 3: partner payout column = 50%",
+    "VGU row S.No 4: partner payout column = 50%",
+    "VGU row S.No 5: partner payout column = 50%",
+    "VGU row S.No 6: partner payout column = 50%",
+    "VGU row S.No 7: partner payout column = 50%",
+    "PARUL row S.No 1: partner payout column = 40%",
+    "PARUL row S.No 2: partner payout column = 40%",
+    "PARUL row S.No 3: partner payout column = 40%",
+    "PARUL row S.No 4: partner payout column = 40%",
+    "PARUL row S.No 5: partner payout column = 40%",
+    "PARUL row S.No 6: partner payout column = 40%",
+    "PARUL row S.No 7: partner payout column = 40%",
+    "PARUL row S.No 8: partner payout column = 40%",
+    "PARUL row S.No 9: partner payout column = 40%",
+    "PARUL row S.No 10: partner payout column = 40%",
+    "NMIMS row S.No 1: partner payout column = 27.5%",
+    "NMIMS row S.No 2: partner payout column = 27.5%",
+    "NMIMS row S.No 3: partner payout column = 27.5%",
+    "NMIMS row S.No 4: partner payout column = 27.5%",
+    "NMIMS row S.No 5: partner payout column = 17.5%",
+    "NMIMS row S.No 6: partner payout column = 27.5%",
+    "NMIMS row S.No 7: partner payout column = 27.5%",
+    "GALGOTIAS row S.No 1: partner payout column = 50%",
+    "GALGOTIAS row S.No 2: partner payout column = 50%",
+    "GALGOTIAS row S.No 3: partner payout column = 50%",
+    "GALGOTIAS row S.No 4: partner payout column = 50%",
+    "GALGOTIAS row S.No 5: partner payout column = 50%",
+    "GALGOTIAS row S.No 6: partner payout column = 50%",
+    "GALGOTIAS row S.No 7: partner payout column = 50%",
+    "UPGRAD DBA row S.No 1: partner payout column = 25%",
+    "UPGRAD DBA row S.No 2: partner payout column = 25%",
+    "UPGRAD DBA row S.No 3: partner payout column = 25%",
+    "UPGRAD DBA row S.No 4: partner payout column = 25%",
+    "UPGRAD DBA row S.No 5: partner payout column = 25%",
+    "UPGRAD DBA row S.No 6: partner payout column = 25%",
+    "UPGRAD DBA row S.No 7: partner payout column = 25%",
+    "ADTU row S.No 1: partner payout column = 40%",
+    "ADTU row S.No 2: partner payout column = 40%",
+    "ADTU row S.No 3: partner payout column = 40%",
+    "ADTU row S.No 4: partner payout column = 40%",
+    "ALLIANCE row S.No 1: partner payout column = 50%",
+    "ALLIANCE row S.No 2: partner payout column = 50%",
+    "ALLIANCE row S.No 3: partner payout column = 50%",
+    "CHRIST row S.No 1: partner payout column = 20%",
+    "CHRIST row S.No 2: partner payout column = 20%",
+    "CHRIST row S.No 3: partner payout column = 20%",
+    "CHRIST row S.No 4: partner payout column = 20%",
+    "CHRIST row S.No 5: partner payout column = 20%",
+    "CHRIST row S.No 6: partner payout column = 20%",
+    "CHRIST row S.No 7: partner payout column = 20%",
+    "MANGALAYATAN row S.No 1: partner payout column = Centre share: Yr1 ₹13,000 | Yr2 ₹12,000 | Yr3 ₹12,000",
+    "MANGALAYATAN row S.No 2: partner payout column = Centre share: Yr1 ₹14,000 | Yr2 ₹13,000 | Yr3 ₹13,000",
+    "MANGALAYATAN row S.No 3: partner payout column = Centre share: Yr1 ₹9,000 | Yr2 ₹8,000 | Yr3 ₹8,000",
+    "MANGALAYATAN row S.No 4: partner payout column = Centre share: Yr1 ₹14,000",
+    "MANGALAYATAN row S.No 5: partner payout column = Centre share: Yr1 ₹11,000 | Yr2 ₹10,000",
+    "MANGALAYATAN row S.No 6: partner payout column = Centre share: Yr1 ₹11,000 | Yr2 ₹10,000",
+    "MANGALAYATAN row S.No 7: partner payout column = Centre share: Yr1 ₹16,000 | Yr2 ₹15,000",
+    "MANGALAYATAN row S.No 8: partner payout column = Centre share: Yr1 ₹19,000 | Yr2 ₹18,000",
+    "MANGALAYATAN row S.No 9: partner payout column = Centre share: Yr1 ₹22,000 | Yr2 ₹21,000",
+    "MANGALAYATAN row S.No 10: partner payout column = Centre share: Yr1 ₹19,000 | Yr2 ₹18,000",
+    "MANGALAYATAN row S.No 11: partner payout column = Centre share: Yr1 ₹19,000",
+    "MANGALAYATAN row S.No 12: partner payout column = Centre share: Yr1 ₹12,000",
+    "MANGALAYATAN row S.No 13: partner payout column = Centre share: Yr1 ₹15,000",
+    "MANGALAYATAN row S.No 14: partner payout column = Centre share: Yr1 ₹8,000 | Yr2 ₹7,000 | Yr3 ₹7,000",
+    "MANGALAYATAN row S.No 15: partner payout column = Centre share: Yr1 ₹11,000 | Yr2 ₹10,000 | Yr3 ₹10,000",
+    "MANGALAYATAN row S.No 16: partner payout column = Centre share: Yr1 ₹8,000 | Yr2 ₹7,000 | Yr3 ₹7,000",
+    "MANGALAYATAN row S.No 17: partner payout column = Centre share: Yr1 ₹14,000 | Yr2 ₹13,000 | Yr3 ₹13,000",
+    "MANGALAYATAN row S.No 18: partner payout column = Centre share: Yr1 ₹11,000 | Yr2 ₹10,000",
+    "MANGALAYATAN row S.No 19: partner payout column = Centre share: Yr1 ₹16,000 | Yr2 ₹15,000",
+    "MANGALAYATAN row S.No 20: partner payout column = Centre share: Yr1 ₹16,000 | Yr2 ₹15,000",
+    "MANGALAYATAN row S.No 21: partner payout column = Centre share: Yr1 ₹18,000 | Yr2 ₹17,000",
+    "MANGALAYATAN row S.No 22: partner payout column = Centre share: Yr1 ₹22,000 | Yr2 ₹21,000",
+    "MANGALAYATAN row S.No 23: partner payout column = Centre share: Yr1 ₹13,000",
+    "MANGALAYATAN row S.No 24: partner payout column = Centre share: Yr1 ₹14,000",
+    "MANGALAYATAN row S.No 25: partner payout column = Centre share: ₹11,000",
+    "MANGALAYATAN row S.No 26: partner payout column = Centre share: ₹14,000",
+    "MANGALAYATAN row S.No 27: partner payout column = Centre share: ₹9,000",
+    "MANGALAYATAN row S.No 28: partner payout column = Centre share: ₹12,000",
+    "MANGALAYATAN row S.No 29: partner payout column = Centre share: ₹9,000",
+    "MANGALAYATAN row S.No 30: partner payout column = Centre share: ₹9,000",
+    "MANGALAYATAN row S.No 31: partner payout column = Centre share: ₹12,000",
+    "MANGALAYATAN row S.No 32: partner payout column = Centre share: ₹11,000",
+    "MANGALAYATAN row S.No 33: partner payout column = Centre share: ₹11,000",
+    "MANGALAYATAN row S.No 34: partner payout column = Centre share: ₹11,000",
+    "MANGALAYATAN row S.No 35: partner payout column = Centre share: ₹11,000",
+    "MANGALAYATAN row S.No 36: partner payout column = Centre share: ₹11,000",
+    "MANGALAYATAN row S.No 37: partner payout column = Centre share: ₹11,000",
+    "MANGALAYATAN row S.No 38: partner payout column = Centre share: ₹11,000",
+    "MANGALAYATAN row S.No 39: partner payout column = Centre share: ₹12,000",
+    "MANGALAYATAN row S.No 40: partner payout column = Centre share: ₹12,000",
+    "MANGALAYATAN row S.No 41: partner payout column = Centre share: ₹15,000",
+    "MANGALAYATAN row S.No 42: partner payout column = Centre share: ₹19,000",
+    "MANGALAYATAN row S.No 43: partner payout column = Centre share: ₹15,000",
+    "MANGALAYATAN row S.No 44: partner payout column = Centre share: ₹15,000",
+    "MANGALAYATAN row S.No 45: partner payout column = Centre share: ₹11,000"
+  ],
+  "payment_workflow": {
+    "source_file": "Partner_Sharing_July_26__1_.pdf",
+    "new_admission": [
+      "Provisional invoice within 7 days of payment receipt upload in ERP",
+      "Status → 'Ready to Generate' on 6th of following month",
+      "Center updates invoice number in ERP",
+      "Credited on/before 15th of every month",
+      "Late invoices roll to next cycle"
+    ],
+    "re_registration": [
+      "Provisional invoice monthly on university re-registration confirmation in ERP",
+      "Center updates invoice number once 'Ready to Generate'",
+      "Payment released within 15 days of invoice processing"
+    ],
+    "note": "Fees and revenue sharing are subject to change per university guidelines (source)."
+  },
+  "scrub_log": [
+    {
+      "where": "Admission Process step 7",
+      "removed": [
+        "payout by 15th;",
+        "re-registration payouts monthly within 15 days."
+      ]
+    },
+    {
+      "where": "Admission Process step Intake timeline",
+      "removed": [
+        "Fees & payouts valid for July-2026 intake"
+      ]
+    },
+    {
+      "where": "MUJ row S.No 1 loan text",
+      "removed": [
+        "Loan payout to partner: 30% PG / 27% UG."
+      ]
+    },
+    {
+      "where": "MUJ row S.No 2 loan text",
+      "removed": [
+        "Loan payout to partner: 30% PG / 27% UG."
+      ]
+    },
+    {
+      "where": "MUJ row S.No 3 loan text",
+      "removed": [
+        "Loan payout to partner: 30% PG / 27% UG."
+      ]
+    },
+    {
+      "where": "MUJ row S.No 4 loan text",
+      "removed": [
+        "Loan payout to partner: 30% PG / 27% UG."
+      ]
+    },
+    {
+      "where": "MUJ row S.No 5 loan text",
+      "removed": [
+        "Loan payout to partner: 30% PG / 27% UG."
+      ]
+    },
+    {
+      "where": "MUJ row S.No 6 loan text",
+      "removed": [
+        "Loan payout to partner: 30% PG / 27% UG."
+      ]
+    },
+    {
+      "where": "MUJ row S.No 7 loan text",
+      "removed": [
+        "Loan payout to partner: 30% PG / 27% UG."
+      ]
+    },
+    {
+      "where": "MUJ row S.No 8 loan text",
+      "removed": [
+        "Loan payout to partner: 30% PG / 27% UG."
+      ]
+    },
+    {
+      "where": "MUJ row S.No 9 loan text",
+      "removed": [
+        "Loan payout to partner: 30% PG / 27% UG."
+      ]
+    },
+    {
+      "where": "SMU row S.No 1 loan text",
+      "removed": [
+        "Loan payout 30% PG / 27% UG."
+      ]
+    },
+    {
+      "where": "SMU row S.No 2 loan text",
+      "removed": [
+        "Loan payout 30% PG / 27% UG."
+      ]
+    },
+    {
+      "where": "SMU row S.No 3 loan text",
+      "removed": [
+        "Loan payout 30% PG / 27% UG."
+      ]
+    },
+    {
+      "where": "SMU row S.No 4 loan text",
+      "removed": [
+        "Loan payout 30% PG / 27% UG."
+      ]
+    },
+    {
+      "where": "SMU row S.No 5 loan text",
+      "removed": [
+        "Loan payout 30% PG / 27% UG."
+      ]
+    },
+    {
+      "where": "SMU row S.No 6 loan text",
+      "removed": [
+        "Loan payout 30% PG / 27% UG."
+      ]
+    },
+    {
+      "where": "SMU row S.No 7 loan text",
+      "removed": [
+        "Loan payout 30% PG / 27% UG."
+      ]
+    },
+    {
+      "where": "SMU row S.No 8 loan text",
+      "removed": [
+        "Loan payout 30% PG / 27% UG."
+      ]
+    },
+    {
+      "where": "SMU row S.No 9 loan text",
+      "removed": [
+        "Loan payout 30% PG / 27% UG."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 1 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 2 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 3 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 4 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 5 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 6 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 7 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 8 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 9 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 10 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 11 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 12 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 13 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 14 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 15 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 16 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 17 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 18 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 19 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 20 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 21 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 22 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 23 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 24 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 25 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 26 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 27 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 28 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 29 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 30 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 31 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 32 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 33 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 34 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 35 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "AMITY row S.No 36 loan text",
+      "removed": [
+        "Payout 30% if loan."
+      ]
+    },
+    {
+      "where": "CUOL row S.No 1 loan text",
+      "removed": [
+        "Subvention ₹14–17k on full fee (program-wise)."
+      ]
+    },
+    {
+      "where": "CUOL row S.No 2 loan text",
+      "removed": [
+        "Subvention ₹14–17k on full fee (program-wise)."
+      ]
+    },
+    {
+      "where": "CUOL row S.No 3 loan text",
+      "removed": [
+        "Subvention ₹14–17k on full fee (program-wise)."
+      ]
+    },
+    {
+      "where": "CUOL row S.No 4 loan text",
+      "removed": [
+        "Subvention ₹14–17k on full fee (program-wise)."
+      ]
+    },
+    {
+      "where": "CUOL row S.No 5 loan text",
+      "removed": [
+        "Subvention ₹14–17k on full fee (program-wise)."
+      ]
+    },
+    {
+      "where": "CUOL row S.No 6 loan text",
+      "removed": [
+        "Subvention ₹14–17k on full fee (program-wise)."
+      ]
+    },
+    {
+      "where": "CUOL row S.No 7 loan text",
+      "removed": [
+        "Subvention ₹14–17k on full fee (program-wise)."
+      ]
+    },
+    {
+      "where": "CUOL row S.No 8 loan text",
+      "removed": [
+        "Subvention ₹14–17k on full fee (program-wise)."
+      ]
+    },
+    {
+      "where": "CUOL row S.No 9 loan text",
+      "removed": [
+        "Subvention ₹14–17k on full fee (program-wise)."
+      ]
+    },
+    {
+      "where": "CUOL row S.No 10 loan text",
+      "removed": [
+        "Subvention ₹14–17k on full fee (program-wise)."
+      ]
+    },
+    {
+      "where": "CUOL row S.No 11 loan text",
+      "removed": [
+        "Subvention ₹14–17k on full fee (program-wise)."
+      ]
+    },
+    {
+      "where": "CUOL row S.No 12 loan text",
+      "removed": [
+        "Subvention ₹14–17k on full fee (program-wise)."
+      ]
+    },
+    {
+      "where": "CUOL row S.No 13 loan text",
+      "removed": [
+        "Subvention ₹14–17k on full fee (program-wise)."
+      ]
+    },
+    {
+      "where": "CUOL row S.No 14 loan text",
+      "removed": [
+        "Subvention ₹14–17k on full fee (program-wise)."
+      ]
+    },
+    {
+      "where": "CUOL row S.No 15 loan text",
+      "removed": [
+        "Subvention ₹14–17k on full fee (program-wise)."
+      ]
+    },
+    {
+      "where": "DPU PUNE row S.No 1 loan text",
+      "removed": [
+        "Subvention: BBA ₹14,395"
+      ]
+    },
+    {
+      "where": "DPU PUNE row S.No 2 loan text",
+      "removed": [
+        "Subvention: BBA ₹14,395"
+      ]
+    },
+    {
+      "where": "DPU PUNE row S.No 3 loan text",
+      "removed": [
+        "Subvention: BBA ₹14,395"
+      ]
+    },
+    {
+      "where": "DPU PUNE row S.No 4 loan text",
+      "removed": [
+        "Subvention: BBA ₹14,395"
+      ]
+    },
+    {
+      "where": "DPU NAVI MUMBAI row S.No 1 loan text",
+      "removed": [
+        "Subvention: annual 6.5%"
+      ]
+    },
+    {
+      "where": "DPU NAVI MUMBAI row S.No 2 loan text",
+      "removed": [
+        "Subvention: annual 6.5%"
+      ]
+    },
+    {
+      "where": "DPU NAVI MUMBAI row S.No 3 loan text",
+      "removed": [
+        "Subvention: annual 6.5%"
+      ]
+    },
+    {
+      "where": "DPU NAVI MUMBAI row S.No 4 loan text",
+      "removed": [
+        "Subvention: annual 6.5%"
+      ]
+    },
+    {
+      "where": "DPU NAVI MUMBAI row S.No 5 loan text",
+      "removed": [
+        "Subvention: annual 6.5%"
+      ]
+    },
+    {
+      "where": "DPU NAVI MUMBAI row S.No 6 loan text",
+      "removed": [
+        "Subvention: annual 6.5%"
+      ]
+    },
+    {
+      "where": "DPU NAVI MUMBAI row S.No 7 loan text",
+      "removed": [
+        "Subvention: annual 6.5%"
+      ]
+    },
+    {
+      "where": "DPU NAVI MUMBAI row S.No 8 loan text",
+      "removed": [
+        "Subvention: annual 6.5%"
+      ]
+    },
+    {
+      "where": "SHOOLINI row S.No 1 loan text",
+      "removed": [
+        "Subvention ₹10–20k on full fee."
+      ]
+    },
+    {
+      "where": "SHOOLINI row S.No 2 loan text",
+      "removed": [
+        "Subvention ₹10–20k on full fee."
+      ]
+    },
+    {
+      "where": "SHOOLINI row S.No 3 loan text",
+      "removed": [
+        "Subvention ₹10–20k on full fee."
+      ]
+    },
+    {
+      "where": "SHOOLINI row S.No 4 loan text",
+      "removed": [
+        "Subvention ₹10–20k on full fee."
+      ]
+    },
+    {
+      "where": "SHOOLINI row S.No 5 loan text",
+      "removed": [
+        "Subvention ₹10–20k on full fee."
+      ]
+    },
+    {
+      "where": "SHOOLINI row S.No 6 loan text",
+      "removed": [
+        "Subvention ₹10–20k on full fee."
+      ]
+    },
+    {
+      "where": "SHOOLINI row S.No 7 loan text",
+      "removed": [
+        "Subvention ₹10–20k on full fee."
+      ]
+    },
+    {
+      "where": "SHOOLINI row S.No 8 loan text",
+      "removed": [
+        "Subvention ₹10–20k on full fee."
+      ]
+    },
+    {
+      "where": "VGU row S.No 1 loan text",
+      "removed": [
+        "Subvention 10.9% (18 m) / 14.5% (24 m)."
+      ]
+    },
+    {
+      "where": "VGU row S.No 2 loan text",
+      "removed": [
+        "Subvention 10.9% (18 m) / 14.5% (24 m)."
+      ]
+    },
+    {
+      "where": "VGU row S.No 3 loan text",
+      "removed": [
+        "Subvention 10.9% (18 m) / 14.5% (24 m)."
+      ]
+    },
+    {
+      "where": "VGU row S.No 4 loan text",
+      "removed": [
+        "Subvention 10.9% (18 m) / 14.5% (24 m)."
+      ]
+    },
+    {
+      "where": "VGU row S.No 5 loan text",
+      "removed": [
+        "Subvention 10.9% (18 m) / 14.5% (24 m)."
+      ]
+    },
+    {
+      "where": "VGU row S.No 6 loan text",
+      "removed": [
+        "Subvention 10.9% (18 m) / 14.5% (24 m)."
+      ]
+    },
+    {
+      "where": "VGU row S.No 7 loan text",
+      "removed": [
+        "Subvention 10.9% (18 m) / 14.5% (24 m)."
+      ]
+    },
+    {
+      "where": "NMIMS row S.No 1 loan text",
+      "removed": [
+        "Subvention: MBA ₹29,612;"
+      ]
+    },
+    {
+      "where": "NMIMS row S.No 2 loan text",
+      "removed": [
+        "Subvention: MBA ₹29,612;"
+      ]
+    },
+    {
+      "where": "NMIMS row S.No 3 loan text",
+      "removed": [
+        "Subvention: MBA ₹29,612;"
+      ]
+    },
+    {
+      "where": "NMIMS row S.No 4 loan text",
+      "removed": [
+        "Subvention: MBA ₹29,612;"
+      ]
+    },
+    {
+      "where": "NMIMS row S.No 5 loan text",
+      "removed": [
+        "Subvention: MBA ₹29,612;"
+      ]
+    },
+    {
+      "where": "NMIMS row S.No 6 loan text",
+      "removed": [
+        "Subvention: MBA ₹29,612;"
+      ]
+    },
+    {
+      "where": "NMIMS row S.No 7 loan text",
+      "removed": [
+        "Subvention: MBA ₹29,612;"
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 1 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 2 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 3 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 4 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 5 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 6 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 7 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 8 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 9 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 10 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 11 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 12 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 13 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 14 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 15 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 16 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 17 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 18 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 19 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 20 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 21 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 22 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 23 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 24 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 25 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 26 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 27 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 28 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 29 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 30 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 31 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 32 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 33 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 34 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 35 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 36 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 37 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 38 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 39 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 40 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 41 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 42 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 43 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 44 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    },
+    {
+      "where": "MANGALAYATAN row S.No 45 notes",
+      "removed": [
+        "Centre share (payable to centre) shown in Payout column."
+      ]
+    }
+  ]
+}

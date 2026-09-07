@@ -1,0 +1,50 @@
+[
+  {
+    "step": "1",
+    "action": "Counselling & course selection – check eligibility (marks, subject, work-experience) against the university tab.",
+    "who": "MIODL counsellor + student",
+    "timeline": "Same day"
+  },
+  {
+    "step": "2",
+    "action": "Collect soft-copy documents (see Documents Checklist) and pre-verify names/DOB/marks match across documents.",
+    "who": "MIODL counsellor",
+    "timeline": "1 day"
+  },
+  {
+    "step": "3",
+    "action": "Register on university portal / partner ERP, fill application (personal, academic, work details), pay registration/application fee.",
+    "who": "Student (assisted)",
+    "timeline": "Same day"
+  },
+  {
+    "step": "4",
+    "action": "Upload documents; pay first semester / annual / full fee (or choose No-cost EMI / loan partner).",
+    "who": "Student",
+    "timeline": "Same day"
+  },
+  {
+    "step": "5",
+    "action": "University verifies documents; provisional admission letter issued; enrollment / roll number generated.",
+    "who": "University",
+    "timeline": "2–7 working days"
+  },
+  {
+    "step": "6",
+    "action": "LMS credentials, e-library, orientation; ABC/APAAR ID created; time-table & exam schedule shared.",
+    "who": "University",
+    "timeline": "Within 1–2 weeks of batch start"
+  },
+  {
+    "step": "Exam",
+    "action": "Term-end exams are online (remote-proctored) for online-mode universities; ODL may have centre-based exams. Internal assessment 30% / TEE 70% is common.",
+    "who": "University",
+    "timeline": "Twice a year (Jan / Jul cycles)"
+  },
+  {
+    "step": "Intake",
+    "action": "Two intakes per year for most universities – January & July. July-2026 intake deadlines mostly Aug–Sep 2026 (check each university).",
+    "who": "–",
+    "timeline": null
+  }
+]

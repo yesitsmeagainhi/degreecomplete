@@ -1,0 +1,272 @@
+[
+  {
+    "university_slug": "amrita-vishwa-vidyapeetham",
+    "loan_partners": "PROPELLED",
+    "rate_of_interest": "6% - 12(m)",
+    "applies_to": "ONLY FULL FEE",
+    "no_loan": false,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 2",
+    "detail_rows": []
+  },
+  {
+    "university_slug": "nmims",
+    "loan_partners": "PROPELLED / AVANS",
+    "rate_of_interest": "0% / depend on tenure",
+    "applies_to": "SEM. / ANNUAL / FULL",
+    "no_loan": false,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 3",
+    "detail_rows": []
+  },
+  {
+    "university_slug": "chandigarh-university",
+    "loan_partners": "AVANS / GRAYQUEST / FINZ",
+    "rate_of_interest": "0.0",
+    "applies_to": "SEM. / ANNUAL / FULL",
+    "no_loan": false,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 4",
+    "detail_rows": []
+  },
+  {
+    "university_slug": "kurukshetra-university",
+    "loan_partners": "NO LOAN APPLICABLE",
+    "rate_of_interest": "-",
+    "applies_to": "-",
+    "no_loan": true,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 5",
+    "detail_rows": []
+  },
+  {
+    "university_slug": "andhra-university",
+    "loan_partners": "NO LOAN APPLICABLE",
+    "rate_of_interest": "-",
+    "applies_to": "-",
+    "no_loan": true,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 6",
+    "detail_rows": []
+  },
+  {
+    "university_slug": "amity-university",
+    "loan_partners": "FIBE / AVANS / TCPL / GEAYQUEST",
+    "rate_of_interest": "0% / 0.5% processing charge",
+    "applies_to": "SEM. / ANNUAL / FULL",
+    "no_loan": false,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 7",
+    "detail_rows": []
+  },
+  {
+    "university_slug": "dy-patil-university-pune",
+    "loan_partners": "PROPELLED / AVANS /FIBE",
+    "rate_of_interest": "0% / after 18(m) have some interest",
+    "applies_to": "SEM. / ANNUAL / FULL",
+    "no_loan": false,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 8",
+    "detail_rows": []
+  },
+  {
+    "university_slug": "upes",
+    "loan_partners": "JODO/KHUHU",
+    "rate_of_interest": "0.0",
+    "applies_to": "SEM. / ANNUAL / FULL",
+    "no_loan": false,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 9",
+    "detail_rows": []
+  },
+  {
+    "university_slug": "manipal-university-jaipur",
+    "loan_partners": "No Cost EMI",
+    "rate_of_interest": "Semester",
+    "applies_to": "Annual",
+    "no_loan": false,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 10",
+    "detail_rows": [
+      [
+        "MBA",
+        "✔ No Cost EMI + 15% discount",
+        "✔ No Cost EMI + 15% discount",
+        "✔ No Cost EMI 10% discount",
+        "X Not available",
+        "Hybrid rates 0% discount"
+      ],
+      [
+        "MCA",
+        "✔ No Cost EMI + 10% discount",
+        "✔ No Cost EMI + 10% discount",
+        "✔ No Cost EMI 5% discount",
+        "X Not available",
+        "Hybrid rates 0% discount"
+      ],
+      [
+        "Other Programs PG",
+        "✔ No Cost EMI No Discount",
+        "✔ No Cost EMI No Discount",
+        "✔ No Cost EMI No Discount",
+        "X Not available",
+        "Hybrid rates 0% discount"
+      ],
+      [
+        "Other Programs UG",
+        "✔ No Cost EMI No Discount",
+        "✔ No Cost EMI No Discount",
+        "✔ No Cost EMI No Discount",
+        "✔ No Cost EMI No Discount",
+        "Hybrid rates 0% discount"
+      ]
+    ]
+  },
+  {
+    "university_slug": "sikkim-manipal-university",
+    "loan_partners": "No Cost EMI",
+    "rate_of_interest": "New",
+    "applies_to": null,
+    "no_loan": false,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 15",
+    "detail_rows": [
+      [
+        "Semester",
+        "Annual",
+        "Full 12M",
+        "Full 18M",
+        "Full (Hybrid 24M)"
+      ],
+      [
+        "MBA & MCA",
+        "✔ No Cost EMI + 10% discount",
+        "✔ No Cost EMI + 10% discount",
+        "✔ No Cost EMI + 0% discount",
+        "✔ No Cost EMI + 0% discount",
+        "Hybrid rates 0% discount"
+      ],
+      [
+        "Other Programs",
+        "Not Available",
+        "✔ No Cost EMI + 0% discount",
+        "✔ No Cost EMI + 0% discount",
+        "Not Available",
+        "Not Available"
+      ]
+    ]
+  },
+  {
+    "university_slug": "lovely-professional-university",
+    "loan_partners": "AVANS / PROPELLED",
+    "rate_of_interest": "0% in avans / propelled have interest",
+    "applies_to": "SEM. / ANNUAL / FULL",
+    "no_loan": false,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 19",
+    "detail_rows": []
+  },
+  {
+    "university_slug": "shoolini-university",
+    "loan_partners": "FIBE",
+    "rate_of_interest": "0.0",
+    "applies_to": "ONLY FULL FEE",
+    "no_loan": false,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 20",
+    "detail_rows": []
+  },
+  {
+    "university_slug": "sharda-university",
+    "loan_partners": "FIBE",
+    "rate_of_interest": "0.0",
+    "applies_to": "ONLY FULL FEE",
+    "no_loan": false,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 21",
+    "detail_rows": []
+  },
+  {
+    "university_slug": "uttaranchal-university",
+    "loan_partners": "FIBE",
+    "rate_of_interest": "0% Tenure- 16m / 18m",
+    "applies_to": "SEM. / ANNUAL / FULL",
+    "no_loan": false,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 22",
+    "detail_rows": []
+  },
+  {
+    "university_slug": "gla-university",
+    "loan_partners": "PROPELLED",
+    "rate_of_interest": "0% -24(m)",
+    "applies_to": "ANNUALLY / FULL",
+    "no_loan": false,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 23",
+    "detail_rows": []
+  },
+  {
+    "university_slug": "vivekananda-global-university",
+    "loan_partners": "FIBE / LIQUE",
+    "rate_of_interest": "0.0",
+    "applies_to": "PG - SEM. / ANNUAL / FULL & UG - ONLY FULL FEE",
+    "no_loan": false,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 24",
+    "detail_rows": []
+  },
+  {
+    "university_slug": "parul-university",
+    "loan_partners": "NO LOAN APPLICABLE",
+    "rate_of_interest": "-",
+    "applies_to": "-",
+    "no_loan": true,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 25",
+    "detail_rows": []
+  },
+  {
+    "university_slug": "dy-patil-university-navi-mumbai",
+    "loan_partners": "PROPELLED / FIBE",
+    "rate_of_interest": "0% / 2.5 % processing fee / 4% gst",
+    "applies_to": "SEM. / ANNUAL / FULL",
+    "no_loan": false,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 26",
+    "detail_rows": []
+  },
+  {
+    "university_slug": "galgotias-university",
+    "loan_partners": "PROPELLED",
+    "rate_of_interest": "9% / 500 Stamp duty",
+    "applies_to": "ANNUAL",
+    "no_loan": false,
+    "source_file": "JULY_26_FEE_STRCUTURE.xlsx",
+    "source_sheet": "LOAN STRUCTURE",
+    "source_ref": "row 27",
+    "detail_rows": [
+      [
+        "NOTE :- ROI IS DEPEND ON TENURE. IF TENURE IS MORE THEN 24(m) THEN HAVE SOME INTEREST"
+      ]
+    ]
+  }
+]

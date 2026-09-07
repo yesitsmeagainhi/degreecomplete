@@ -1,0 +1,170 @@
+{
+  "items": [
+    {
+      "num": 1,
+      "name": "Class 10 Marksheet & Passing Certificate",
+      "required_for": "All programmes",
+      "format": "PDF/JPG, clear scan, < 2 MB",
+      "mandatory": "Yes",
+      "remarks": "Used for DOB & name verification."
+    },
+    {
+      "num": 2,
+      "name": "Class 12 Marksheet & Passing Certificate",
+      "required_for": "All programmes",
+      "format": "PDF/JPG, < 2 MB",
+      "mandatory": "Yes",
+      "remarks": "Diploma (3-yr after 10th) holders upload diploma marksheets + certificate instead."
+    },
+    {
+      "num": 3,
+      "name": "Graduation – ALL semester / year marksheets + consolidated marksheet",
+      "required_for": "PG, Executive, PG Diploma, DBA",
+      "format": "PDF (all pages in one file preferred)",
+      "mandatory": "Yes (PG)",
+      "remarks": "Final-year students upload last available marksheet + result-awaited undertaking."
+    },
+    {
+      "num": 4,
+      "name": "Degree Certificate / Provisional Degree Certificate",
+      "required_for": "PG, Executive, PG Diploma, DBA",
+      "format": "PDF/JPG",
+      "mandatory": "Yes (PG)",
+      "remarks": "Provisional accepted if final degree not yet issued."
+    },
+    {
+      "num": 5,
+      "name": "Master's degree marksheets & certificate",
+      "required_for": "DBA / Doctorate",
+      "format": "PDF",
+      "mandatory": "If available",
+      "remarks": "Required where DBA eligibility is via Master's."
+    },
+    {
+      "num": 6,
+      "name": "Proof of Mathematics / Statistics / CS at 10+2 or graduation",
+      "required_for": "MCA, M.Sc (DS/AI/Maths)",
+      "format": "Marksheet clearly showing subject",
+      "mandatory": "Yes (MCA)",
+      "remarks": "If absent, bridge course as per university."
+    },
+    {
+      "num": 7,
+      "name": "Aadhaar Card (front & back)",
+      "required_for": "All (Indian nationals)",
+      "format": "PDF/JPG",
+      "mandatory": "Yes",
+      "remarks": "Mandatory for ABC/APAAR ID creation; mobile must be Aadhaar-linked."
+    },
+    {
+      "num": 8,
+      "name": "Other Govt Photo ID (PAN / Passport / Voter ID / DL)",
+      "required_for": "All",
+      "format": "PDF/JPG",
+      "mandatory": "Optional",
+      "remarks": "Ask if Aadhaar name mismatch."
+    },
+    {
+      "num": 9,
+      "name": "Passport-size Photograph",
+      "required_for": "All",
+      "format": "JPG, white background, < 200 KB",
+      "mandatory": "Yes",
+      "remarks": "Recent (within 6 months)."
+    },
+    {
+      "num": 10,
+      "name": "Signature",
+      "required_for": "All",
+      "format": "JPG on white paper, < 100 KB",
+      "mandatory": "Yes",
+      "remarks": "Blue/black ink."
+    },
+    {
+      "num": 11,
+      "name": "Category Certificate (SC/ST/OBC-NCL/EWS/PwD)",
+      "required_for": "All – only if claiming relaxation / scholarship",
+      "format": "PDF/JPG",
+      "mandatory": "Conditional",
+      "remarks": "Needed to get 5% marks relaxation or scholarship."
+    },
+    {
+      "num": 12,
+      "name": "Work-Experience Certificate(s) / Appointment letter / Salary slip",
+      "required_for": "Executive MBA, MBA WX, NMIMS 2-yr exp route, UPES 45% route, DBA",
+      "format": "PDF",
+      "mandatory": "Conditional",
+      "remarks": "Must show total years; on company letterhead."
+    },
+    {
+      "num": 13,
+      "name": "Name-change proof (Gazette / Marriage certificate / Affidavit)",
+      "required_for": "All – if name differs across documents",
+      "format": "PDF",
+      "mandatory": "Conditional",
+      "remarks": null
+    },
+    {
+      "num": 14,
+      "name": "Migration / Transfer Certificate",
+      "required_for": "Only if the university asks (e.g. some state universities)",
+      "format": "PDF",
+      "mandatory": "Conditional",
+      "remarks": "Not required by most online universities."
+    },
+    {
+      "num": 15,
+      "name": "Gap-year affidavit / undertaking",
+      "required_for": "If education gap > 2 yrs (some universities)",
+      "format": "PDF",
+      "mandatory": "Conditional",
+      "remarks": null
+    },
+    {
+      "num": 16,
+      "name": "Valid e-mail ID & mobile number",
+      "required_for": "All",
+      "format": "–",
+      "mandatory": "Yes",
+      "remarks": "All OTPs, LMS login & ABC ID go here."
+    },
+    {
+      "num": 17,
+      "name": "Passport, Visa / PR card, Address proof, CV",
+      "required_for": "NRI / Foreign nationals",
+      "format": "PDF",
+      "mandatory": "Yes (international)",
+      "remarks": "International fee applies; AIU equivalence certificate for foreign qualifications."
+    },
+    {
+      "num": 18,
+      "name": "Scholarship supporting documents (defence, sports, alumni, sibling etc.)",
+      "required_for": "If claiming university scholarship",
+      "format": "PDF",
+      "mandatory": "Conditional",
+      "remarks": "University-specific."
+    },
+    {
+      "num": 19,
+      "name": "Updated CV / Statement of Purpose",
+      "required_for": "DBA, Executive programmes",
+      "format": "PDF",
+      "mandatory": "Yes (DBA)",
+      "remarks": null
+    },
+    {
+      "num": 20,
+      "name": "Defence / Divyaang / Govt ID (special category)",
+      "required_for": "Optional at Manipal etc.",
+      "format": "PDF",
+      "mandatory": "Optional",
+      "remarks": "Scholarship categories."
+    }
+  ],
+  "verification_flow": "Step 1 – Student shares soft copies on WhatsApp/e-mail/portal → Step 2 – MIODL counsellor pre-checks eligibility & documents → Step 3 – Documents uploaded on university application portal → Step 4 – University verifies (2–7 working days) → Step 5 – Provisional admission letter & fee payment → Step 6 – Enrollment no., LMS login, ABC/APAAR ID → Step 7 – Original verification only if the university asks. Admission proceeds ONLY after successful document verification.",
+  "process_note": "All documents must be submitted as clear SOFT COPIES (scanned PDF/JPG, readable, max ~2 MB each). Documents are VERIFIED by the university / admission team first; admission is processed only after successful verification. Originals may be asked for physical verification later if the university requires.",
+  "abc_note": "Mandatory for every online/ODL learner (UGC & NEP-2020). Created with Aadhaar-linked mobile number during admission; credits earned are deposited in the Academic Bank of Credits.",
+  "max_duration_rule": "UG degree: min 3 yrs / max 6 yrs. PG degree: min 2 yrs / max 4 yrs. Diploma: 1 yr / max 2 yrs. Certificate: 6 months / max 1 yr. Learners can complete at their own pace within the max window.",
+  "reservation_note": "Most universities give 5% relaxation in minimum marks to SC/ST/OBC/PwD/EWS candidates (e.g. 50% → 45%). Category certificate must be uploaded to claim it.",
+  "disclaimer": "Eligibility, fees and intake dates are decided by the respective university and may change without notice. Admission is subject to document verification by the university. Please contact MIODL counsellors (98 33 07 44 76 / www.degreecomplete.in) for the latest confirmation before payment."
+}
