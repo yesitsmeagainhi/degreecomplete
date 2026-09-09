@@ -1,9 +1,10 @@
 import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
 import { dbAdmin } from "@/lib/db";
 import { requireStaff } from "@/lib/rbac";
 import { audit } from "@/lib/audit";
 
-export default async function UniversitiesAdmin() {
+export default async function UniversitiesAdmin({ searchParams }: { searchParams: { msg?: string; err?: string } }) {
   await requireStaff("admin.universities");
   const list = await dbAdmin.university.findMany({
     orderBy: { name: "asc" },
@@ -15,25 +16,37 @@ export default async function UniversitiesAdmin() {
     const s = await requireStaff("admin.universities");
     const id = String(fd.get("id"));
     const data = { description: String(fd.get("description") ?? "").slice(0, 2000) || null, shortName: String(fd.get("shortName") ?? "").slice(0, 60) || null, status: String(fd.get("status")) as never, verificationStatus: String(fd.get("verificationStatus")) as never };
-    const before = await dbAdmin.university.findUnique({ where: { id }, select: { status: true, verificationStatus: true } });
-    await dbAdmin.university.update({ where: { id }, data: { ...data, publishedAt: data.verificationStatus === "PUBLISHED" ? new Date() : undefined } });
-    await audit(s, "university.update", "University", id, before, data);
+    try {
+      const before = await dbAdmin.university.findUnique({ where: { id }, select: { status: true, verificationStatus: true } });
+      await dbAdmin.university.update({ where: { id }, data: { ...data, publishedAt: data.verificationStatus === "PUBLISHED" ? new Date() : undefined } });
+      await audit(s, "university.update", "University", id, before, data);
+    } catch (e) {
+      redirect(`/admin/universities?err=${encodeURIComponent(String(e instanceof Error ? e.message : e))}`);
+    }
     revalidatePath("/admin/universities");
+    redirect("/admin/universities?msg=University+saved");
   }
   async function saveProgram(fd: FormData) {
     "use server";
     const s = await requireStaff("admin.programs");
     const id = String(fd.get("id"));
     const data = { eligibilityText: String(fd.get("eligibilityText") ?? "").slice(0, 1500) || null, durationYears: fd.get("durationYears") ? Number(fd.get("durationYears")) : null, status: String(fd.get("status")) as never };
-    await dbAdmin.program.update({ where: { id }, data: { ...data, publishedAt: data.status === "PUBLISHED" ? new Date() : undefined } });
-    await audit(s, "program.update", "Program", id, undefined, data);
+    try {
+      await dbAdmin.program.update({ where: { id }, data: { ...data, publishedAt: data.status === "PUBLISHED" ? new Date() : undefined } });
+      await audit(s, "program.update", "Program", id, undefined, data);
+    } catch (e) {
+      redirect(`/admin/universities?err=${encodeURIComponent(String(e instanceof Error ? e.message : e))}`);
+    }
     revalidatePath("/admin/universities");
+    redirect("/admin/universities?msg=Program+saved");
   }
 
   const uStatus = ["ACTIVE", "ON_HOLD", "NOT_AVAILABLE", "NO_FEE_DATA", "NO_DATA"];
   const vStatus = ["UNDER_REVIEW", "VERIFIED", "PUBLISHED", "EXPIRED"];
   return (
     <div>
+      {searchParams.err && <p className="mb-3 rounded bg-red-100 px-4 py-2 text-sm text-red-800">Error: {searchParams.err}</p>}
+      {searchParams.msg && <p className="mb-3 rounded bg-green-100 px-4 py-2 text-sm text-green-800">{searchParams.msg}</p>}
       <h1>Universities and programs</h1>
       <p className="muted mt-1">A university appears publicly only when status is Active and publication is Published. A program appears only when Published — a published program with no published fee shows “Contact us to confirm current fee”. Eligibility is blank until you enter verified criteria.</p>
       <div className="mt-4 space-y-4">
