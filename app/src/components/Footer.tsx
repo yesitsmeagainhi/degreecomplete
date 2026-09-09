@@ -21,14 +21,14 @@ export function Footer() {
         <div>
           <p className="mb-4 text-xs font-semibold uppercase tracking-wider text-white/50">Explore</p>
           <ul className="space-y-2.5 text-sm text-white/80">
-            <li><Link href="/universities" className="no-underline hover:text-blue-100 transition-colors">Universities</Link></li>
-            <li><Link href="/search" className="no-underline hover:text-blue-100 transition-colors">All programs</Link></li>
-            <li><Link href="/compare" className="no-underline hover:text-blue-100 transition-colors">Compare programs</Link></li>
-            <li><Link href="/find-course" className="no-underline hover:text-blue-100 transition-colors">Find my course</Link></li>
-            <li><Link href="/documents-required" className="no-underline hover:text-blue-100 transition-colors">Documents required</Link></li>
-            <li><Link href="/admission-process" className="no-underline hover:text-blue-100 transition-colors">Admission process</Link></li>
+            <li><Link href="/universities" className="text-white/80 no-underline hover:text-blue-100 transition-colors">Universities</Link></li>
+            <li><Link href="/search" className="text-white/80 no-underline hover:text-blue-100 transition-colors">All programs</Link></li>
+            <li><Link href="/compare" className="text-white/80 no-underline hover:text-blue-100 transition-colors">Compare programs</Link></li>
+            <li><Link href="/find-course" className="text-white/80 no-underline hover:text-blue-100 transition-colors">Find my course</Link></li>
+            <li><Link href="/documents-required" className="text-white/80 no-underline hover:text-blue-100 transition-colors">Documents required</Link></li>
+            <li><Link href="/admission-process" className="text-white/80 no-underline hover:text-blue-100 transition-colors">Admission process</Link></li>
             {Object.entries(seoPages).slice(0, 4).map(([slug, p]) => (
-              <li key={slug}><Link href={`/${slug}`} className="no-underline hover:text-blue-100 transition-colors">{p.title}</Link></li>
+              <li key={slug}><Link href={`/${slug}`} className="text-white/80 no-underline hover:text-blue-100 transition-colors">{p.title}</Link></li>
             ))}
           </ul>
         </div>
@@ -36,7 +36,7 @@ export function Footer() {
           <p className="mb-4 text-xs font-semibold uppercase tracking-wider text-white/50">Company</p>
           <ul className="space-y-2.5 text-sm text-white/80">
             {[["about", "About us"], ["how-it-works", "How it works"], ["why-degreecomplete", "Why DegreeComplete"], ["faq", "FAQ"], ["contact", "Contact"], ["student/login", "Student login"], ["privacy-policy", "Privacy policy"], ["terms", "Terms & conditions"], ["refund-policy", "Refund & cancellation"], ["disclaimer", "Disclaimer"]].map(([s, l]) => (
-              <li key={s}><Link href={`/${s}`} className="no-underline hover:text-blue-100 transition-colors">{l}</Link></li>
+              <li key={s}><Link href={`/${s}`} className="text-white/80 no-underline hover:text-blue-100 transition-colors">{l}</Link></li>
             ))}
           </ul>
         </div>
