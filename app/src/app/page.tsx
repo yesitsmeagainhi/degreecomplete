@@ -91,7 +91,7 @@ export default async function HomePage() {
               </div>
             )}
             <div className="mt-5 flex items-center gap-3 rounded-xl bg-white/5 px-4 py-3 text-sm text-white/70">
-              <Image src="/seal-256.png" alt="" width={32} height={32} className="h-8 w-8 opacity-90" />
+              <Image src="/image/dc.png" alt="" width={42} height={42} className="h-8 w-8 rounded" />
               <span>{site.institution} — a guidance platform, not a university.</span>
             </div>
           </div>

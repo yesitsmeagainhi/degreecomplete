@@ -6,7 +6,7 @@ const config: Config = {
     extend: {
       colors: {
         navy: { DEFAULT: "#1B2A4A", 800: "#0F1D36", 700: "#253A5E", 100: "#E2E8F0", 50: "#F0F4F8" },
-        blue: { DEFAULT: "#00A6E0", 700: "#0087B8", 600: "#0095CA", 100: "#E0F4FD", 50: "#F0F9FF" },
+        blue: { DEFAULT: "#0063fc", 700: "#0059e3", 600: "#0059e3", 100: "#E0F4FD", 50: "#F0F9FF" },
         gold: { DEFAULT: "#F7941D", 600: "#E8850F", 100: "#FEF0DB", 50: "#FFF8EE" },
         green: { DEFAULT: "#17805A", 700: "#126649", 100: "#E3F3EC" },
         ink: "#1B2A4A",

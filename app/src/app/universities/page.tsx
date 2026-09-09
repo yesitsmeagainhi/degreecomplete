@@ -33,12 +33,15 @@ export default async function UniversitiesPage({ searchParams: searchParamsPromi
 
   return (
     <div className="container-x py-10">
-      <h1>Universities</h1>
-      <p className="mt-3 max-w-prose text-gray-700">Every university listed here has programs with verified, published details. Starting fees are the lowest published total program fee for a degree program.</p>
-      <div className="mt-6 space-y-3">
+      <div className="max-w-2xl">
+        <h1>Universities</h1>
+        <p className="mt-3 text-gray-600 leading-relaxed">Every university listed here has programs with verified, published details. Starting fees are the lowest published total program fee for a degree program.</p>
+      </div>
+      <div className="mt-8 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm space-y-3">
+        <p className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3">Filter by</p>
         <div className="flex flex-wrap gap-2"><Chip k="mode" v="ONLINE" label="Online" /><Chip k="mode" v="DISTANCE" label="Distance" /><Chip k="level" v="UG" label="UG" /><Chip k="level" v="PG" label="PG" /><Chip k="level" v="Diploma" label="Diploma" /></div>
         <div className="flex flex-wrap gap-2">{courseFamilies.slice(0, 9).map((c) => <Chip key={c} k="course" v={c} label={c} />)}</div>
-        <div className="flex flex-wrap gap-2">{budgets.map(([l, v]) => <Chip key={v} k="budget" v={String(v)} label={l} />)}{Object.values(q).some(Boolean) && <Link href="/universities" className="chip no-underline hover:bg-navy-50">Clear filters</Link>}</div>
+        <div className="flex flex-wrap gap-2">{budgets.map(([l, v]) => <Chip key={v} k="budget" v={String(v)} label={l} />)}{Object.values(q).some(Boolean) && <Link href="/universities" className="chip no-underline text-red-500 border-red-200 hover:bg-red-50 hover:border-red-300">Clear filters</Link>}</div>
       </div>
       <p className="muted mt-6">{list.length} of {all.length} universities</p>
       {list.length ? (

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { site, seoPages } from "@/lib/config";
 
 export function Footer() {
@@ -6,7 +7,9 @@ export function Footer() {
     <footer className="border-t border-gray-200 bg-navy text-white">
       <div className="container-x grid gap-10 py-14 md:grid-cols-4">
         <div className="md:col-span-2">
-          <p className="font-serif text-2xl">DegreeComplete<span className="text-blue">.in</span></p>
+          <div className="inline-block rounded-xl bg-white px-4 py-2">
+            <Image src="/image/dclogo.png" alt={site.name} width={220} height={50} className="h-10 w-auto" />
+          </div>
           <p className="mt-1 text-sm text-white/70">{site.institution}</p>
           <p className="mt-4 max-w-prose text-sm leading-relaxed text-white/70">
             An Online & Distance Education guidance platform. We help you explore programs from partner universities, compare fees, check eligibility and apply with support from admission to degree completion. We are not a university and do not award degrees.

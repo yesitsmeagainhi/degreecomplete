@@ -16,12 +16,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-gray-200 bg-white/98 backdrop-blur-md">
       <div className="container-x flex h-16 items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-3 no-underline" aria-label={`${site.name} home`}>
-          <Image src="/seal-256.png" alt="" width={40} height={40} priority className="h-10 w-10" />
-          <span className="leading-tight">
-            <span className="block font-serif text-lg text-navy">DegreeComplete<span className="text-blue">.in</span></span>
-            <span className="hidden text-[11px] text-gray-500 sm:block">{site.institution}</span>
-          </span>
+        <Link href="/" className="no-underline" aria-label={`${site.name} home`}>
+          <Image src="/image/dclogo.png" alt={site.name} width={220} height={50} priority className="h-16 w-auto" />
         </Link>
         <nav className="hidden items-center gap-1 md:flex" aria-label="Main">
           {nav.map((n) => (
@@ -33,7 +29,7 @@ export function Header() {
           <Link href="/find-course" className="btn-primary hidden !min-h-10 !rounded-xl !py-2 text-sm md:inline-flex">Check eligibility</Link>
           <details className="relative md:hidden">
             <summary className="btn-ghost !min-h-10 cursor-pointer list-none !px-3 text-sm" aria-label="Menu">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M3 12h18M3 6h18M3 18h18" /></svg>
             </summary>
             <div className="absolute right-0 mt-2 w-60 rounded-2xl border border-gray-200 bg-white p-2 shadow-card">
               {nav.map((n) => (
