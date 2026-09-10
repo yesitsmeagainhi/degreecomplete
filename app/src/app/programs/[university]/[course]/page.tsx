@@ -45,7 +45,7 @@ export default async function ProgramPage({ params: paramsPromise }: { params: P
       <div className="grid gap-8 md:grid-cols-12">
         <div className="md:col-span-8">
           <p className="badge-blue">{modeLabel(p.mode)} · {levelLabel(p.level)}</p>
-          <h1 className="mt-2">{p.courseDisplay}</h1>
+          <h1 className="mt-2 break-words">{p.courseDisplay}</h1>
           <p className="mt-2 text-lg text-gray-700">{u.name}{u.location ? `, ${u.location}` : ""}</p>
           <dl className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
             <Fact k="Duration" v={duration ?? "Confirm with advisor"} />
@@ -98,7 +98,7 @@ export default async function ProgramPage({ params: paramsPromise }: { params: P
 
         <aside className="md:col-span-4">
           <div className="card sticky top-20">
-            <p className="font-serif text-xl text-navy">{p.courseDisplay} at {u.shortName ?? u.name}</p>
+            <p className="font-serif text-xl text-navy break-words">{p.courseDisplay} at {u.shortName ?? u.name}</p>
             <dl className="mt-3 space-y-1 text-sm text-gray-700">
               {duration && <div className="flex justify-between"><dt>Duration</dt><dd className="font-semibold text-navy">{duration}</dd></div>}
               {p.minMarks && <div className="flex justify-between"><dt>Minimum marks</dt><dd className="font-semibold text-navy">{p.minMarks}</dd></div>}
