@@ -117,9 +117,10 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ ok: true, leadCode });
   } catch (err) {
-    console.error("Lead submission failed:", err);
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error("Lead submission failed:", msg, err);
     return NextResponse.json(
-      { error: "Something went wrong. Please try again." },
+      { error: "Something went wrong. Please try again.", detail: process.env.NODE_ENV !== "production" ? msg : undefined },
       { status: 500 },
     );
   }
