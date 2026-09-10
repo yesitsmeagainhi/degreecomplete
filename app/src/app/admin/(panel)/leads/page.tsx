@@ -1,23 +1,40 @@
 import { dbAdmin } from "@/lib/db";
 import { requireStaff } from "@/lib/rbac";
 import { LeadRow } from "./LeadRow";
+import { Pagination } from "@/components/Pagination";
 
 const stages = ["NEW", "CONTACTED", "QUALIFIED", "COURSE_SELECTED", "DOCUMENTS_PENDING", "APPLICATION_STARTED", "APPLICATION_SUBMITTED", "ADMISSION_CONFIRMED", "CLOSED", "NOT_INTERESTED"];
+const PER_PAGE = 50;
 
-export default async function LeadsPage({ searchParams: searchParamsPromise }: { searchParams: Promise<{ status?: string; q?: string }> }) {
+export default async function LeadsPage({ searchParams: searchParamsPromise }: { searchParams: Promise<{ status?: string; q?: string; page?: string }> }) {
   const searchParams = await searchParamsPromise;
   await requireStaff("admin.leads");
-  const [leads, counsellors] = await Promise.all([
+  const where = {
+    ...(searchParams.status ? { status: searchParams.status as never } : {}),
+    ...(searchParams.q ? { OR: [{ name: { contains: searchParams.q, mode: "insensitive" as const } }, { mobile: { contains: searchParams.q } }, { leadCode: { contains: searchParams.q, mode: "insensitive" as const } }] } : {}),
+  };
+  const page = Math.max(1, Number(searchParams.page) || 1);
+  const [leads, total, counsellors] = await Promise.all([
     dbAdmin.lead.findMany({
-      where: { ...(searchParams.status ? { status: searchParams.status as never } : {}), ...(searchParams.q ? { OR: [{ name: { contains: searchParams.q, mode: "insensitive" } }, { mobile: { contains: searchParams.q } }, { leadCode: { contains: searchParams.q, mode: "insensitive" } }] } : {}) },
-      orderBy: { createdAt: "desc" }, take: 200,
+      where, orderBy: { createdAt: "desc" }, skip: (page - 1) * PER_PAGE, take: PER_PAGE,
       include: { interestedUniversity: { select: { name: true } }, program: { select: { courseDisplay: true } }, counsellor: { select: { id: true, name: true } } },
     }),
+    dbAdmin.lead.count({ where }),
     dbAdmin.staffUser.findMany({ where: { active: true, role: { in: ["COUNSELLOR", "SUPER_ADMIN"] } }, select: { id: true, name: true } }),
   ]);
+  const totalPages = Math.max(1, Math.ceil(total / PER_PAGE));
+  const pageHref = (p: number) => {
+    const params = new URLSearchParams();
+    if (searchParams.q) params.set("q", searchParams.q);
+    if (searchParams.status) params.set("status", searchParams.status);
+    if (p > 1) params.set("page", String(p));
+    const s = params.toString();
+    return `/admin/leads${s ? `?${s}` : ""}`;
+  };
   return (
     <div>
       <h1>Leads</h1>
+      <p className="muted mt-1">{total} total</p>
       <form className="mt-4 flex flex-wrap gap-2">
         <input name="q" defaultValue={searchParams.q} placeholder="Name, mobile or lead ID" className="field max-w-xs" />
         <select name="status" defaultValue={searchParams.status ?? ""} className="field max-w-xs"><option value="">All stages</option>{stages.map((s) => <option key={s} value={s}>{s.toLowerCase().replaceAll("_", " ")}</option>)}</select>
@@ -30,6 +47,7 @@ export default async function LeadsPage({ searchParams: searchParamsPromise }: {
         </table>
       </div>
       {leads.length === 0 && <p className="muted mt-4">No leads match.</p>}
+      <Pagination currentPage={page} totalPages={totalPages} href={pageHref} />
     </div>
   );
 }

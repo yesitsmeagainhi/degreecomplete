@@ -35,26 +35,76 @@ export default async function ApplicationPage({ params: paramsPromise, searchPar
       <h1>{a.program.courseDisplay} — {a.university.name}</h1>
       <p className="muted mt-1">Application {a.applicationCode} · {dateLabel(a.createdAt)}{a.specialization ? ` · ${a.specialization}` : ""}</p>
       <div className="mt-6"><StatusSteps status={a.status} /></div>
-      <div className="mt-8 grid gap-8 md:grid-cols-2">
-        <section>
-          <h2>Documents</h2>
+
+      {/* Student Info */}
+      <section className="mt-8 rounded-2xl border border-gray-200 bg-white p-6">
+        <h2 className="text-lg">Your details</h2>
+        <dl className="mt-4 grid gap-x-8 gap-y-4 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            ["Name", a.name],
+            ["Mobile", a.mobile],
+            ["Email", a.email],
+            ["City", a.city],
+            ["Qualification", a.qualification],
+            ["Specialization", a.specialization],
+          ]
+            .filter(([, v]) => v)
+            .map(([label, value]) => (
+              <div key={label}>
+                <dt className="text-xs font-semibold uppercase tracking-wider text-gray-400">{label}</dt>
+                <dd className="mt-1 text-sm font-medium text-navy">{value}</dd>
+              </div>
+            ))}
+        </dl>
+      </section>
+
+      <div className="mt-8 grid gap-6 md:grid-cols-2">
+        <section className="rounded-2xl border border-gray-200 bg-white p-6">
+          <h2 className="text-lg">Documents</h2>
           <p className="muted mt-1">JPG, PNG or PDF, up to 5 MB each.</p>
           <div className="mt-4"><DocumentUploader applicationId={a.id} /></div>
-          <ul className="mt-4 divide-y divide-line rounded-xl2 border border-line">
-            {a.documents.length === 0 && <li className="p-4 text-sm text-gray-600">No documents uploaded yet.</li>}
-            {a.documents.map((d) => <li key={d.id} className="flex items-center justify-between gap-3 p-4 text-sm"><span><span className="font-medium text-navy">{d.type.replace("_", " ")}</span> · {d.fileName}</span><span className={`chip ${d.status === "VERIFIED" ? "chip-active" : ""}`}>{d.status.toLowerCase()}</span></li>)}
+          <ul className="mt-4 divide-y divide-gray-100 rounded-xl border border-gray-100 overflow-hidden">
+            {a.documents.length === 0 && <li className="px-4 py-3 text-sm text-gray-500 bg-gray-50">No documents uploaded yet.</li>}
+            {a.documents.map((d) => (
+              <li key={d.id} className="flex items-center justify-between gap-3 px-4 py-3 text-sm">
+                <span><span className="font-medium text-navy">{d.type.replace("_", " ")}</span> <span className="text-gray-400">·</span> {d.fileName}</span>
+                <span className={`chip text-xs ${d.status === "VERIFIED" ? "chip-active" : ""}`}>{d.status.toLowerCase()}</span>
+              </li>
+            ))}
           </ul>
         </section>
-        <section>
-          <h2>Timeline</h2>
-          <ul className="mt-4 space-y-3">{a.events.map((e, i) => <li key={i} className="text-sm"><span className="font-medium text-navy">{e.status.replaceAll("_", " ").toLowerCase()}</span> — {e.note} <span className="text-gray-500">({dateLabel(e.createdAt)})</span></li>)}</ul>
-          <h2 className="mt-8">Messages</h2>
-          {a.messages.length === 0 ? <p className="muted mt-2">No messages yet. Your counsellor will write here, or call {site.phoneDisplay}.</p> : <ul className="mt-3 space-y-2">{a.messages.map((m, i) => <li key={i} className="rounded-lg bg-mist p-3 text-sm"><span className="font-medium text-navy">{m.fromRole}</span>: {m.body}</li>)}</ul>}
-        </section>
+
+        <div className="space-y-6">
+          <section className="rounded-2xl border border-gray-200 bg-white p-6">
+            <h2 className="text-lg">Timeline</h2>
+            <ul className="mt-4 space-y-3">
+              {a.events.map((e, i) => (
+                <li key={i} className="flex items-start gap-3 text-sm">
+                  <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-navy/30" />
+                  <span><span className="font-medium text-navy capitalize">{e.status.replaceAll("_", " ").toLowerCase()}</span> — {e.note} <span className="text-gray-400">({dateLabel(e.createdAt)})</span></span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="rounded-2xl border border-gray-200 bg-white p-6">
+            <h2 className="text-lg">Messages</h2>
+            {a.messages.length === 0
+              ? <p className="muted mt-3">No messages yet. Your counsellor will write here, or call {site.phoneDisplay}.</p>
+              : <ul className="mt-4 space-y-3">{a.messages.map((m, i) => (
+                  <li key={i} className="rounded-xl bg-gray-50 px-4 py-3 text-sm">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-gray-400">{m.fromRole}</span>
+                    <p className="mt-1 text-navy">{m.body}</p>
+                  </li>
+                ))}</ul>
+            }
+          </section>
+        </div>
       </div>
-      <section className="mt-10">
-        <h2>Fee information</h2>
-        <p className="muted mt-1 mb-4">Published fee structure for your program. You pay the university directly as per its process; we will confirm the exact amount and plan before you pay.</p>
+
+      <section className="mt-8 rounded-2xl border border-gray-200 bg-white p-6">
+        <h2 className="text-lg">Fee information</h2>
+        <p className="muted mt-1 mb-5">Published fee structure for your program. You pay the university directly as per its process; we will confirm the exact amount and plan before you pay.</p>
         <FeeTable fees={a.program.fees} course={a.program.courseDisplay} />
       </section>
     </div>

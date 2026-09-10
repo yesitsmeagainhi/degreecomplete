@@ -90,12 +90,12 @@ export default async function UniversityPage({ params: paramsPromise }: { params
         </div>
         <aside className="md:col-span-4">
           <div className="card sticky top-20">
-            <p className="font-serif text-xl text-navy">Get details for {u.shortName ?? u.name}</p>
-            <p className="muted mt-1">Eligibility, current fees and the next intake — from an advisor, not a bot.</p>
+            <p className="font-serif text-lg text-navy">Get details for {u.shortName ?? u.name}</p>
+            <p className="muted mt-1 text-sm">Eligibility, current fees and the next intake — from an advisor, not a bot.</p>
             <div className="mt-4 flex flex-col gap-2">
-              <LeadCta context={ctx} label="Check eligibility" className="btn-gold w-full" />
-              <Link href={`/apply?university=${u.slug}`} className="btn-primary w-full">Apply now</Link>
-              <LeadCta context={ctx} label="Get fee details" className="btn-outline w-full" />
+              <Link href={`/apply?university=${u.slug}`} className="btn-primary w-full no-underline">Apply now</Link>
+              <LeadCta context={ctx} label="Check eligibility" className="btn-outline w-full" />
+              <LeadCta context={ctx} label="Get fee details" className="text-sm text-blue font-medium no-underline hover:underline cursor-pointer text-center py-1" />
             </div>
           </div>
         </aside>

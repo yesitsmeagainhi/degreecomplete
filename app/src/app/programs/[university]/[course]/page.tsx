@@ -105,7 +105,7 @@ export default async function ProgramPage({ params: paramsPromise }: { params: P
               <div className="flex justify-between"><dt>Total fee</dt><dd className="font-semibold text-navy">{fee ? `${approx ? "≈ " : ""}${inr(fee)}` : "Confirm"}</dd></div>
             </dl>
             <div className="mt-4 flex flex-col gap-2">
-              <LeadCta context={ctx} label="Check eligibility" className="btn-gold w-full" />
+              <LeadCta context={ctx} label="Check eligibility" className="btn-blue w-full" />
               <Link href={`/apply?university=${u.slug}&program=${p.slug}`} className="btn-primary w-full">Apply now</Link>
               <LeadCta context={ctx} label="Get fee details on WhatsApp" className="btn-outline w-full" />
               <div className="pt-1"><CompareButton id={p.id} label={p.course} /></div>

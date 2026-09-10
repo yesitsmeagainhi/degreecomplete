@@ -34,8 +34,8 @@ export function CompareButton({ id, label }: { id: string; label: string }) {
   useEffect(() => setMounted(true), []);
   const on = mounted && has(id);
   return (
-    <button type="button" onClick={() => toggle(id, label)} aria-pressed={on} className={`chip ${on ? "chip-active" : ""}`}>
-      {on ? "Added to compare" : "Add to compare"}
+    <button type="button" onClick={() => toggle(id, label)} aria-pressed={on} className={`inline-flex items-center rounded-xl px-3.5 py-2.5 text-xs font-semibold transition-all ${on ? "bg-navy text-white shadow-md" : "border-2 border-navy/20 bg-white text-navy hover:border-navy/40 hover:bg-navy-50"}`}>
+      {on ? "Added" : "Compare"}
     </button>
   );
 }

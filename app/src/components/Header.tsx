@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { site } from "@/lib/config";
 import { CompareTrayLink } from "./CompareTray";
 
@@ -13,6 +16,8 @@ const nav = [
 ];
 
 export function Header() {
+  const pathname = usePathname();
+  const isActive = (href: string) => pathname === href || pathname.startsWith(href + "/");
   return (
     <header className="sticky top-0 z-40 border-b border-gray-200 bg-white/98 backdrop-blur-md">
       <div className="container-x flex h-16 items-center justify-between gap-4">
@@ -21,7 +26,7 @@ export function Header() {
         </Link>
         <nav className="hidden items-center gap-1 md:flex" aria-label="Main">
           {nav.map((n) => (
-            <Link key={n.href} href={n.href} className="rounded-lg px-3 py-2 text-sm font-medium text-gray-700 no-underline transition-colors hover:bg-blue-50 hover:text-blue">{n.label}</Link>
+            <Link key={n.href} href={n.href} className={`rounded-lg px-3 py-2 text-sm font-medium no-underline transition-colors ${isActive(n.href) ? "bg-blue-50 text-blue" : "text-gray-700 hover:bg-blue-50 hover:text-blue"}`}>{n.label}</Link>
           ))}
         </nav>
         <div className="flex items-center gap-2">
@@ -33,7 +38,7 @@ export function Header() {
             </summary>
             <div className="absolute right-0 mt-2 w-60 rounded-2xl border border-gray-200 bg-white p-2 shadow-card">
               {nav.map((n) => (
-                <Link key={n.href} href={n.href} className="block rounded-xl px-4 py-2.5 text-navy no-underline hover:bg-blue-50">{n.label}</Link>
+                <Link key={n.href} href={n.href} className={`block rounded-xl px-4 py-2.5 no-underline ${isActive(n.href) ? "bg-blue-50 text-blue font-medium" : "text-navy hover:bg-blue-50"}`}>{n.label}</Link>
               ))}
               <div className="my-1 border-t border-gray-100" />
               <Link href="/student/login" className="block rounded-xl px-4 py-2.5 text-navy no-underline hover:bg-blue-50">Student login</Link>

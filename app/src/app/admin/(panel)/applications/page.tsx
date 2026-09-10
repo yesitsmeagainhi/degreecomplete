@@ -2,17 +2,34 @@ import Link from "next/link";
 import { dbAdmin } from "@/lib/db";
 import { requireStaff } from "@/lib/rbac";
 import { dateLabel } from "@/lib/format";
+import { Pagination } from "@/components/Pagination";
 
-export default async function ApplicationsPage({ searchParams: searchParamsPromise }: { searchParams: Promise<{ status?: string }> }) {
+const PER_PAGE = 50;
+
+export default async function ApplicationsPage({ searchParams: searchParamsPromise }: { searchParams: Promise<{ status?: string; page?: string }> }) {
   const searchParams = await searchParamsPromise;
   await requireStaff("admin.applications");
-  const apps = await dbAdmin.application.findMany({
-    where: searchParams.status ? { status: searchParams.status as never } : {}, orderBy: { createdAt: "desc" }, take: 200,
-    include: { university: { select: { name: true } }, program: { select: { courseDisplay: true, mode: true } }, documents: { select: { status: true } } },
-  });
+  const where = searchParams.status ? { status: searchParams.status as never } : {};
+  const page = Math.max(1, Number(searchParams.page) || 1);
+  const [apps, total] = await Promise.all([
+    dbAdmin.application.findMany({
+      where, orderBy: { createdAt: "desc" }, skip: (page - 1) * PER_PAGE, take: PER_PAGE,
+      include: { university: { select: { name: true } }, program: { select: { courseDisplay: true, mode: true } }, documents: { select: { status: true } } },
+    }),
+    dbAdmin.application.count({ where }),
+  ]);
+  const totalPages = Math.max(1, Math.ceil(total / PER_PAGE));
+  const pageHref = (p: number) => {
+    const params = new URLSearchParams();
+    if (searchParams.status) params.set("status", searchParams.status);
+    if (p > 1) params.set("page", String(p));
+    const s = params.toString();
+    return `/admin/applications${s ? `?${s}` : ""}`;
+  };
   return (
     <div>
       <h1>Applications</h1>
+      <p className="muted mt-1">{total} total</p>
       <div className="mt-4 overflow-x-auto rounded-xl2 border border-line">
         <table className="w-full min-w-[800px] text-sm">
           <thead><tr className="bg-mist text-left"><th className="p-3">Application</th><th className="p-3">Student</th><th className="p-3">Program</th><th className="p-3">Documents</th><th className="p-3">Status</th><th className="p-3">Created</th></tr></thead>
@@ -22,6 +39,7 @@ export default async function ApplicationsPage({ searchParams: searchParamsPromi
         </table>
       </div>
       {apps.length === 0 && <p className="muted mt-4">No applications yet.</p>}
+      <Pagination currentPage={page} totalPages={totalPages} href={pageHref} />
     </div>
   );
 }

@@ -4,11 +4,13 @@ import { SearchBox } from "@/components/SearchBox";
 import { ProgramCard } from "@/components/Cards";
 import { searchPrograms, parseSearchQuery, courseFamilies, type SearchFilters } from "@/lib/catalog";
 import { LeadCta } from "@/components/LeadForm";
+import { Pagination, paginate } from "@/components/Pagination";
 
 export const dynamic = "force-dynamic";
 export const metadata: Metadata = { title: "Search programs", description: "Search Online and Distance programs by university, course, specialization or mode." };
 
-type Q = { q?: string; course?: string; mode?: string; level?: string; maxFee?: string; sort?: string; university?: string; qualification?: string };
+type Q = { q?: string; course?: string; mode?: string; level?: string; maxFee?: string; sort?: string; university?: string; qualification?: string; page?: string };
+const PER_PAGE = 12;
 
 export default async function SearchPage({ searchParams: searchParamsPromise }: { searchParams: Promise<Q> }) {
   const searchParams = await searchParamsPromise;
@@ -28,7 +30,11 @@ export default async function SearchPage({ searchParams: searchParamsPromise }: 
   const Chip = ({ k, v, label }: { k: keyof Q; v: string; label: string }) => (
     <Link href={link({ [k]: searchParams[k] === v ? "" : v })} className={`chip no-underline ${searchParams[k] === v ? "chip-active" : "hover:bg-navy-50"}`}>{label}</Link>
   );
-  const title = searchParams.q ? `Results for “${searchParams.q}”` : searchParams.course ? `${searchParams.course} programs` : searchParams.qualification ? `Programs you can join after ${searchParams.qualification}` : "All programs";
+  const title = searchParams.q ? `Results for "${searchParams.q}"` : searchParams.course ? `${searchParams.course} programs` : searchParams.qualification ? `Programs you can join after ${searchParams.qualification}` : "All programs";
+
+  const { items: paged, currentPage, totalPages, totalItems } = paginate(hits, Number(searchParams.page) || 1, PER_PAGE);
+  const pageHref = (p: number) => link({ page: p > 1 ? String(p) : "" });
+
   return (
     <div className="container-x py-10">
       <h1>{title}</h1>
@@ -43,13 +49,16 @@ export default async function SearchPage({ searchParams: searchParamsPromise }: 
           <Chip k="sort" v="fee_asc" label="Lowest fee first" /><Chip k="sort" v="fee_desc" label="Highest fee first" />
         </div>
       </div>
-      <p className="muted mt-6">{hits.length} program{hits.length === 1 ? "" : "s"}</p>
-      {hits.length ? (
-        <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">{hits.map((p) => <ProgramCard key={p.id} p={p} />)}</div>
+      <p className="muted mt-6">{totalItems} program{totalItems === 1 ? "" : "s"}</p>
+      {paged.length ? (
+        <>
+          <div className="mt-4 grid gap-6 md:grid-cols-2 lg:grid-cols-3">{paged.map((p) => <ProgramCard key={p.id} p={p} />)}</div>
+          <Pagination currentPage={currentPage} totalPages={totalPages} href={pageHref} />
+        </>
       ) : (
         <div className="card mt-4 max-w-xl">
           <p className="font-medium text-navy">No published program matches this search.</p>
-          <p className="muted mt-1">Try a broader term like “MBA” or “BCA”, or ask an advisor — some programs are still being verified and can be shared on request.</p>
+          <p className="muted mt-1">Try a broader term like &quot;MBA&quot; or &quot;BCA&quot;, or ask an advisor — some programs are still being verified and can be shared on request.</p>
           <div className="mt-4"><LeadCta context={{ source: "search-empty", interestedCourse: searchParams.q }} label="Ask an education expert" /></div>
         </div>
       )}
