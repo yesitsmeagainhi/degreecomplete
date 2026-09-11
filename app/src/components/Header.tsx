@@ -37,12 +37,12 @@ export function Header() {
             <summary className="btn-ghost !min-h-10 cursor-pointer list-none !px-3 text-sm" aria-label="Menu">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M3 12h18M3 6h18M3 18h18" /></svg>
             </summary>
-            <div className="absolute right-0 mt-2 w-60 rounded-2xl border border-gray-200 bg-white p-2 shadow-card">
+            <div className="fixed right-2 top-[4.5rem] w-60 max-h-[calc(100vh-5rem)] overflow-y-auto rounded-2xl border border-gray-200 bg-white p-2 shadow-card z-50">
               {nav.map((n) => (
                 <Link key={n.href} href={n.href} className={`block rounded-xl px-4 py-2.5 no-underline ${isActive(n.href) ? "bg-blue-50 text-blue font-medium" : "text-navy hover:bg-blue-50"}`}>{n.label}</Link>
               ))}
-              <div className="my-1 border-t border-gray-100" />
-              <Link href="/student/login" className="block rounded-xl px-4 py-2.5 text-navy no-underline hover:bg-blue-50">Student login</Link>
+              {/* <div className="my-1 border-t border-gray-100" />
+              <Link href="/student/login" className="block rounded-xl bg-blue-50 px-4 py-2.5 text-sm font-medium text-blue no-underline hover:bg-blue-100">Student login</Link> */}
             </div>
           </details>
         </div>

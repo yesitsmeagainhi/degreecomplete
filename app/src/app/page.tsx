@@ -142,23 +142,23 @@ export default async function HomePage() {
               <h2>Popular courses</h2>
               <p>Programs with verified, published details ready to compare.</p>
             </div>
-            <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4">
               {familyList.map((f) => (
                 <FlipCard
                   key={f.course}
                   href={`/search?course=${encodeURIComponent(f.course)}`}
                   label={f.course}
                   front={<>
-                    <p className="font-serif text-3xl text-navy">{f.course}</p>
-                    <p className="mt-2 text-sm font-semibold text-blue">{f.count} program{f.count === 1 ? "" : "s"}</p>
-                    <p className="mt-1 text-xs text-gray-400">{f.uniCount} universit{f.uniCount === 1 ? "y" : "ies"}</p>
+                    <p className="font-serif text-2xl md:text-3xl font-bold text-navy">{f.course}</p>
+                    <p className="mt-2 text-[10px] md:text-xs font-semibold text-blue">{f.count} program{f.count === 1 ? "" : "s"}</p>
+                    <p className="mt-0.5 text-[9px] md:text-[11px] text-gray-400">{f.uniCount} universit{f.uniCount === 1 ? "y" : "ies"}</p>
                   </>}
                   back={<>
                     <div>
-                      <p className="font-serif text-xl text-white">{f.course}</p>
-                      <p className="mt-1 text-xs text-white/50 uppercase tracking-wide">{f.level === "PG" ? "Postgraduate" : "Undergraduate"}</p>
+                      <p className="font-serif text-lg md:text-xl font-bold text-white">{f.course}</p>
+                      <p className="mt-1 text-[9px] md:text-xs text-white/50 uppercase tracking-wide">{f.level === "PG" ? "Postgraduate" : "Undergraduate"}</p>
                     </div>
-                    <div className="mt-3 space-y-1.5 text-sm text-white/75">
+                    <div className="mt-2 md:mt-3 space-y-1 md:space-y-1.5 text-[10px] md:text-sm text-white/75">
                       {f.lowestFee && <p>Fees from {inr(f.lowestFee)}</p>}
                       <p>Duration: {f.duration}</p>
                       <p>{f.eligibility}</p>
@@ -185,10 +185,10 @@ export default async function HomePage() {
                 <h2 className="!text-white">Online MBA — compare at a glance</h2>
                 <p className="mt-2 text-sm text-white/70">Lowest published total fee first. Open any program for the full breakdown.</p>
               </div>
-              <Link href="/online-mba" className="btn-white hidden sm:inline-flex">All MBA programs</Link>
+              <Link href="/online-mba" className="btn-blue hidden sm:inline-flex">All MBA programs</Link>
             </div>
             <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">{mbas.slice(0, 6).map((p) => <ProgramCard key={p.id} p={p} />)}</div>
-            <Link href="/online-mba" className="btn-white mt-6 w-full sm:hidden">All MBA programs</Link>
+            <Link href="/online-mba" className="btn-blue mt-6 w-full sm:hidden">All MBA programs</Link>
           </div>
         </section>
       )}
