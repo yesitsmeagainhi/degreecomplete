@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { SearchBox } from "@/components/SearchBox";
 import { ProgramCard } from "@/components/Cards";
-import { searchPrograms, parseSearchQuery, courseFamilies, type SearchFilters } from "@/lib/catalog";
+import { searchPrograms, parseSearchQuery, type SearchFilters } from "@/lib/catalog";
 import { LeadCta } from "@/components/LeadForm";
 import { Pagination, paginate } from "@/components/Pagination";
 
@@ -27,41 +26,50 @@ export default async function SearchPage({ searchParams: searchParamsPromise }: 
     for (const [k, v] of Object.entries({ ...searchParams, ...patch })) if (v) p.set(k, v);
     return `/search?${p.toString()}`;
   };
-  const Chip = ({ k, v, label }: { k: keyof Q; v: string; label: string }) => (
-    <Link href={link({ [k]: searchParams[k] === v ? "" : v })} className={`chip no-underline ${searchParams[k] === v ? "chip-active" : "hover:bg-navy-50"}`}>{label}</Link>
-  );
-  const title = searchParams.q ? `Results for "${searchParams.q}"` : searchParams.course ? `${searchParams.course} programs` : searchParams.qualification ? `Programs you can join after ${searchParams.qualification}` : "All programs";
-
   const { items: paged, currentPage, totalPages, totalItems } = paginate(hits, Number(searchParams.page) || 1, PER_PAGE);
   const pageHref = (p: number) => link({ page: p > 1 ? String(p) : "" });
 
   return (
-    <div className="container-x py-10">
-      <h1>{title}</h1>
-      <div className="mt-6 max-w-2xl"><SearchBox initial={searchParams.q ?? ""} /></div>
-      <div className="mt-6 space-y-3">
-        <div className="flex flex-wrap gap-2"><span className="muted self-center">My qualification:</span><Chip k="qualification" v="12th Pass" label="12th Pass" /><Chip k="qualification" v="Graduation" label="Graduate" /><Chip k="qualification" v="Working Professional" label="Working professional" /></div>
-        <div className="flex flex-wrap gap-2"><Chip k="mode" v="ONLINE" label="Online" /><Chip k="mode" v="DISTANCE" label="Distance" /><Chip k="level" v="UG" label="UG" /><Chip k="level" v="PG" label="PG" /><Chip k="level" v="Diploma" label="Diploma" /><Chip k="level" v="Certificate" label="Certificate" /></div>
-        <div className="flex flex-wrap gap-2">{courseFamilies.map((c) => <Chip key={c} k="course" v={c} label={c} />)}</div>
-        <div className="flex flex-wrap gap-2">
-          <Chip k="maxFee" v="75000" label="Under ₹75,000" /><Chip k="maxFee" v="150000" label="Under ₹1.5 lakh" /><Chip k="maxFee" v="250000" label="Under ₹2.5 lakh" />
-          <span className="mx-1 self-center text-gray-400">|</span>
-          <Chip k="sort" v="fee_asc" label="Lowest fee first" /><Chip k="sort" v="fee_desc" label="Highest fee first" />
+    <div>
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-navy via-navy-700 to-blue py-6 md:py-14">
+        <div className="container-x">
+          <div className="max-w-2xl mx-auto text-center">
+            <h1 className="text-xl md:text-4xl font-bold text-white">Explore All Programs</h1>
+            <p className="mt-1 md:mt-2 text-xs md:text-base text-blue-100">Search and compare verified online & distance programs from UGC-entitled universities.</p>
+          </div>
+          <div className="mt-4 md:mt-6 max-w-2xl mx-auto hidden md:block">
+            <SearchBox initial={searchParams.q ?? ""} large />
+          </div>
         </div>
+      </section>
+
+      <div className="container-x py-5 md:py-8">
+        {/* Mobile search bar */}
+        <div className="md:hidden mb-4">
+          <SearchBox initial={searchParams.q ?? ""} />
+        </div>
+
+        {/* Status bar */}
+        <div className="flex items-center justify-between gap-2 rounded-xl bg-blue-50 px-4 py-3 border border-blue-100 mb-6">
+          <p className="text-sm font-medium text-navy"><span className="font-bold text-blue">{totalItems}</span> program{totalItems === 1 ? "" : "s"}</p>
+          <p className="text-xs font-semibold text-green-700 bg-green-100 rounded-full px-3 py-1">EMI Available</p>
+        </div>
+
+        {/* Cards */}
+        {paged.length ? (
+          <>
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{paged.map((p) => <ProgramCard key={p.id} p={p} />)}</div>
+            <Pagination currentPage={currentPage} totalPages={totalPages} href={pageHref} />
+          </>
+        ) : (
+          <div className="card max-w-xl">
+            <p className="font-medium text-navy">No published program matches this search.</p>
+            <p className="muted mt-1">Try a broader term like &quot;MBA&quot; or &quot;BCA&quot;, or ask an advisor — some programs are still being verified and can be shared on request.</p>
+            <div className="mt-4"><LeadCta context={{ source: "search-empty", interestedCourse: searchParams.q }} label="Ask an education expert" /></div>
+          </div>
+        )}
       </div>
-      <p className="muted mt-6">{totalItems} program{totalItems === 1 ? "" : "s"}</p>
-      {paged.length ? (
-        <>
-          <div className="mt-4 grid gap-6 md:grid-cols-2 lg:grid-cols-3">{paged.map((p) => <ProgramCard key={p.id} p={p} />)}</div>
-          <Pagination currentPage={currentPage} totalPages={totalPages} href={pageHref} />
-        </>
-      ) : (
-        <div className="card mt-4 max-w-xl">
-          <p className="font-medium text-navy">No published program matches this search.</p>
-          <p className="muted mt-1">Try a broader term like &quot;MBA&quot; or &quot;BCA&quot;, or ask an advisor — some programs are still being verified and can be shared on request.</p>
-          <div className="mt-4"><LeadCta context={{ source: "search-empty", interestedCourse: searchParams.q }} label="Ask an education expert" /></div>
-        </div>
-      )}
     </div>
   );
 }

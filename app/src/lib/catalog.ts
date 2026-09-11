@@ -152,6 +152,7 @@ export function programHeadline(p: { fees: PublicFee[]; totalFeeApprox: number |
 
 export async function searchPrograms(f: SearchFilters): Promise<ProgramHit[]> {
   const q = f.q?.trim();
+  const variants = q ? searchVariants(q) : [];
   const where: Prisma.ProgramWhereInput = {
     ...publishedProgram,
     ...(f.course && f.course !== "UG" ? { course: { equals: f.course, mode: "insensitive" } } : {}),
@@ -163,11 +164,19 @@ export async function searchPrograms(f: SearchFilters): Promise<ProgramHit[]> {
     ...(q
       ? {
           OR: [
-            { course: { contains: q, mode: "insensitive" } },
-            { courseDisplay: { contains: q, mode: "insensitive" } },
+            ...variants.flatMap((v) => [
+              { course: { contains: v, mode: "insensitive" as const } },
+              { courseDisplay: { contains: v, mode: "insensitive" as const } },
+            ]),
             { university: { name: { contains: q, mode: "insensitive" } } },
             { specializations: { some: { name: { contains: q, mode: "insensitive" } } } },
-            ...tokenise(q).map((t) => ({ OR: [{ course: { contains: t, mode: "insensitive" as const } }, { specializations: { some: { name: { contains: t, mode: "insensitive" as const } } } }] })),
+            ...tokenise(q).flatMap((t) => {
+              const tv = searchVariants(t);
+              return tv.flatMap((v) => [
+                { course: { contains: v, mode: "insensitive" as const } },
+                { specializations: { some: { name: { contains: v, mode: "insensitive" as const } } } },
+              ]);
+            }),
           ],
         }
       : {}),
@@ -188,6 +197,18 @@ export async function searchPrograms(f: SearchFilters): Promise<ProgramHit[]> {
   else if (f.sort === "fee_desc") hits.sort((a, b) => feeOf(b) - feeOf(a));
   else hits.sort((a, b) => a.university.name.localeCompare(b.university.name) || a.course.localeCompare(b.course));
   return hits;
+}
+
+/** Generate search variants to handle abbreviations like "bcom" → "b.com", "mcom" → "m.com" */
+function searchVariants(q: string): string[] {
+  const set = new Set<string>([q]);
+  // Strip dots: "B.Com" → "BCom"
+  const noDots = q.replace(/\./g, "");
+  set.add(noDots);
+  // Add dot after single leading letter: "bcom" → "b.com", "mcom" → "m.com", "btech" → "b.tech"
+  const m = noDots.match(/^([a-zA-Z])(\w+)$/);
+  if (m) set.add(`${m[1]}.${m[2]}`);
+  return [...set];
 }
 
 /** "MBA Finance" → tries "MBA" as course and "Finance" as specialization; "Online BCA" → mode + course. */

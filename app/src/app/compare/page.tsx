@@ -44,7 +44,7 @@ export default async function ComparePage({ searchParams: searchParamsPromise }:
       <p className="mt-3 max-w-prose text-gray-700">Add up to four programs from any program page or search result. Cells that differ between programs are highlighted.</p>
       <CompareActions count={programs.length} />
       {programs.length === 0 ? (
-        <div className="card mt-6 max-w-xl"><p className="font-medium text-navy">Nothing to compare yet.</p><p className="muted mt-1">Use “Add to compare” on any program, then come back here.</p><Link href="/search" className="btn-primary mt-4">Browse programs</Link></div>
+        <div className="card mt-6 max-w-xl"><p className="font-medium text-navy">Nothing to compare yet.</p><p className="muted mt-1">Use “Add to compare” on any program, then come back here.</p><Link href="/search" className="btn-blue mt-4">Browse programs</Link></div>
       ) : (
         <div className="mt-6 overflow-x-auto rounded-xl2 border border-line">
           <table className="w-full min-w-[640px] border-collapse text-sm">
@@ -67,7 +67,7 @@ export default async function ComparePage({ searchParams: searchParamsPromise }:
               })}
               <tr className="border-t border-line">
                 <th scope="row" className="p-3 text-left font-medium text-navy">Next step</th>
-                {programs.map((p) => <td key={p.id} className="p-3"><LeadCta context={{ source: "compare", interestedCourse: p.course, universitySlug: p.university.slug, universityName: p.university.name, programSlug: p.slug }} label="Get details" className="btn-gold !min-h-10 !px-4 !py-2 text-sm" /></td>)}
+                {programs.map((p) => <td key={p.id} className="p-3"><LeadCta context={{ source: "compare", interestedCourse: p.course, universitySlug: p.university.slug, universityName: p.university.name, programSlug: p.slug }} label="Get details" className="btn-blue !min-h-10 !px-4 !py-2 text-sm" /></td>)}
               </tr>
             </tbody>
           </table>

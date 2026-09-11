@@ -7,6 +7,7 @@ import { site } from "@/lib/config";
 import { CompareTrayLink } from "./CompareTray";
 
 const nav = [
+  { href: "/", label: "Home" },
   { href: "/universities", label: "Universities" },
   { href: "/search", label: "Programs" },
   { href: "/compare", label: "Compare" },
@@ -17,7 +18,7 @@ const nav = [
 
 export function Header() {
   const pathname = usePathname();
-  const isActive = (href: string) => pathname === href || pathname.startsWith(href + "/");
+  const isActive = (href: string) => href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(href + "/");
   return (
     <header className="sticky top-0 z-40 border-b border-gray-200 bg-white/98 backdrop-blur-md">
       <div className="container-x flex h-16 items-center justify-between gap-4">

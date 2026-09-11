@@ -36,7 +36,7 @@ export function Pagination({ currentPage, totalPages, href }: PaginationProps) {
             href={href(p)}
             className={`rounded-lg px-3 py-2 text-sm font-medium no-underline transition-colors ${
               p === currentPage
-                ? "bg-navy text-white"
+                ? "bg-blue text-white"
                 : "border border-gray-200 bg-white text-navy hover:bg-gray-50"
             }`}
           >

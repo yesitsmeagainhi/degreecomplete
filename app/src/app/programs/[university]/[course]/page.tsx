@@ -59,7 +59,7 @@ export default async function ProgramPage({ params: paramsPromise }: { params: P
             {eligibility ? <p className="mt-3 max-w-prose leading-relaxed text-gray-800">{eligibility}</p> : <p className="mt-3 max-w-prose text-gray-700">{levelGuidance[p.level] ?? levelGuidance.Other}</p>}
             {p.selectionText && <p className="mt-3 text-sm text-gray-700"><span className="font-semibold text-navy">Selection:</span> {p.selectionText}</p>}
             {notes.reservation_note && <p className="muted mt-2">{notes.reservation_note}</p>}
-            <div className="mt-4 flex flex-wrap gap-3"><LeadCta context={ctx} label="Check my eligibility" /><Link href={`/apply?university=${u.slug}&program=${p.slug}`} className="btn-blue">Apply now</Link></div>
+            <div className="mt-4 flex flex-wrap gap-3"><LeadCta context={ctx} label="Check my eligibility" className="btn-blue" /><Link href={`/apply?university=${u.slug}&program=${p.slug}`} className="btn-blue">Apply now</Link></div>
           </section>
 
           {p.specializations.length > 0 && (

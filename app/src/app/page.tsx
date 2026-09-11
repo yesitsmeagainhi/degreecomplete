@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { SearchBox } from "@/components/SearchBox";
 import { UniversityCard, ProgramCard } from "@/components/Cards";
+import { FlipCard } from "@/components/FlipCard";
 import { LeadCta } from "@/components/LeadForm";
 import { catalogueCounts, listUniversities, courseFamilyCounts, searchPrograms, getDocumentRequirements, getEligibilityRules } from "@/lib/catalog";
 import { site, seoPages } from "@/lib/config";
@@ -57,45 +58,57 @@ export default async function HomePage() {
     <>
       {/* ── HERO ── */}
       <section className="hero-gradient relative overflow-hidden text-white">
-        <div className="container-x grid gap-10 py-16 md:grid-cols-12 md:py-24">
-          <div className="md:col-span-7">
-            <div className="badge-gold mb-5">Online & Distance Education Guidance</div>
-            <h1 className="!text-white text-4xl md:text-[3.25rem] leading-[1.08]">{site.tagline}</h1>
-            <div className="rule mt-6" />
-            <p className="mt-6 max-w-prose text-lg leading-relaxed text-white/85">
+        {/* decorative floating orbs */}
+        <div className="hero-orb hero-orb-1" />
+        <div className="hero-orb hero-orb-2" />
+
+        <div className="container-x relative z-10 grid gap-6 py-8 md:gap-10 md:grid-cols-12 md:py-16">
+          <div className="md:col-span-8 flex flex-col justify-center">
+            <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-gold/30 bg-gold/20 px-3 py-1 text-[15px] font-semibold uppercase tracking-wide text-gold mb-3">
+              <svg className="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              Online & Distance Education Guidance
+            </span>
+            <h1 className="!text-white text-2xl md:text-[3.5rem] leading-[1.12] md:leading-[1.08] tracking-tight">{site.tagline}</h1>
+            <div className="rule-accent mt-3 md:mt-6" />
+            <p className="mt-3 md:mt-6 max-w-prose text-sm md:text-lg leading-relaxed text-white/80">
               Explore Online & Distance Degree Programs from Leading Universities — Compare Courses, Fees and Eligibility in One Place.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/universities" className="btn-gold">Explore universities</Link>
+            <div className="mt-5 md:mt-8 flex flex-wrap gap-2 md:gap-3">
+              <Link href="/universities" className="btn-blue">Explore universities</Link>
               <Link href="/find-course" className="btn-white">Find my course</Link>
             </div>
           </div>
-          <div className="md:col-span-5 md:pt-2">
-            <div className="rounded-2xl border border-white/15 bg-white/10 p-6 backdrop-blur-sm">
+          <div className="md:col-span-4 md:pt-2">
+            <div className="rounded-xl md:rounded-2xl border border-white/15 bg-white/10 p-2.5 md:p-5 backdrop-blur-md shadow-2xl">
               <SearchBox large />
             </div>
             {counts.universities > 0 && (
-              <div className="mt-6 grid grid-cols-3 gap-4 text-center">
-                <div>
-                  <p className="font-serif text-3xl font-semibold text-gold">{counts.universities}+</p>
-                  <p className="mt-1 text-xs text-white/70">Universities</p>
+              <div className="mt-5 grid grid-cols-3 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm overflow-hidden">
+                <div className="py-3 text-center">
+                  <p className="font-serif text-2xl font-semibold text-white">{counts.universities}+</p>
+                  <p className="mt-0.5 text-[10px] font-medium tracking-wide uppercase text-white/50">Universities</p>
                 </div>
-                <div>
-                  <p className="font-serif text-3xl font-semibold text-gold">{counts.programs}+</p>
-                  <p className="mt-1 text-xs text-white/70">Programs</p>
+                <div className="py-3 text-center border-l border-r border-white/10">
+                  <p className="font-serif text-2xl font-semibold text-white">{counts.programs}+</p>
+                  <p className="mt-0.5 text-[10px] font-medium tracking-wide uppercase text-white/50">Programs</p>
                 </div>
-                <div>
-                  <p className="font-serif text-3xl font-semibold text-gold">{counts.specializations}+</p>
-                  <p className="mt-1 text-xs text-white/70">Specializations</p>
+                <div className="py-3 text-center">
+                  <p className="font-serif text-2xl font-semibold text-white">{counts.specializations}+</p>
+                  <p className="mt-0.5 text-[10px] font-medium tracking-wide uppercase text-white/50">Specializations</p>
                 </div>
               </div>
             )}
-            <div className="mt-5 flex items-center gap-3 rounded-xl bg-white/5 px-4 py-3 text-sm text-white/70">
-              <Image src="/image/dc.png" alt="" width={42} height={42} className="h-8 w-8 rounded" />
+            <div className="mt-3 flex items-center gap-3 rounded-xl bg-white/5 px-4 py-3 text-sm text-white/50">
+              <Image src="/image/dc.png" alt="" width={42} height={42} className="h-7 w-7 rounded" />
               <span>{site.institution} — a guidance platform, not a university.</span>
             </div>
           </div>
         </div>
+
+        {/* smooth wave transition to body */}
+        <div className="hero-wave" />
       </section>
 
       {/* ── START FROM WHERE YOU ARE ── */}
@@ -105,15 +118,16 @@ export default async function HomePage() {
             <h2>Start from where you are</h2>
             <p>Pick your current qualification and we'll show programs you can actually join.</p>
           </div>
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
             {paths.map((p) => (
-              <Link key={p.q} href={`/search?qualification=${encodeURIComponent(p.q)}`} className="group card card-blue-top no-underline hover:border-blue">
-                <div className="icon-circle-blue mb-4 group-hover:bg-blue group-hover:text-white transition-colors">
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d={p.icon} /></svg>
+              <Link key={p.q} href={`/search?qualification=${encodeURIComponent(p.q)}`} className="group relative overflow-hidden rounded-2xl border border-blue-100 bg-gradient-to-br from-white via-blue-50/40 to-blue-50 p-6 shadow-sm no-underline transition-all duration-300 hover:shadow-lg hover:border-blue/40 hover:-translate-y-1">
+                <div className="absolute top-0 left-0 h-1 w-full bg-gradient-to-r from-blue via-blue-400 to-blue-300" />
+                <div className="mb-4 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-blue-100 text-blue transition-colors group-hover:bg-blue group-hover:text-white shadow-sm">
+                  <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d={p.icon} /></svg>
                 </div>
                 <p className="font-serif text-2xl text-navy group-hover:text-blue transition-colors">{p.title}</p>
-                <p className="mt-2 text-gray-600">{p.body}</p>
-                <p className="mt-4 font-semibold text-blue group-hover:text-blue-700">{p.cta} &rarr;</p>
+                <p className="mt-2 text-gray-600 leading-relaxed">{p.body}</p>
+                <p className="mt-5 inline-flex items-center gap-1.5 font-semibold text-blue group-hover:text-blue-700 transition-colors">{p.cta} <span className="transition-transform group-hover:translate-x-1">&rarr;</span></p>
               </Link>
             ))}
           </div>
@@ -130,44 +144,28 @@ export default async function HomePage() {
             </div>
             <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
               {familyList.map((f) => (
-                <Link key={f.course} href={`/search?course=${encodeURIComponent(f.course)}`} className="flip-card no-underline block">
-                  <div className="flip-card-inner">
-                    {/* Front */}
-                    <div className="flip-card-front card card-blue-top text-center">
-                      <p className="font-serif text-3xl text-navy">{f.course}</p>
-                      <p className="mt-2 text-sm font-semibold text-blue">{f.count} program{f.count === 1 ? "" : "s"}</p>
-                      <p className="mt-1 text-xs text-gray-400">{f.uniCount} universit{f.uniCount === 1 ? "y" : "ies"}</p>
+                <FlipCard
+                  key={f.course}
+                  href={`/search?course=${encodeURIComponent(f.course)}`}
+                  label={f.course}
+                  front={<>
+                    <p className="font-serif text-3xl text-navy">{f.course}</p>
+                    <p className="mt-2 text-sm font-semibold text-blue">{f.count} program{f.count === 1 ? "" : "s"}</p>
+                    <p className="mt-1 text-xs text-gray-400">{f.uniCount} universit{f.uniCount === 1 ? "y" : "ies"}</p>
+                  </>}
+                  back={<>
+                    <div>
+                      <p className="font-serif text-xl text-white">{f.course}</p>
+                      <p className="mt-1 text-xs text-white/50 uppercase tracking-wide">{f.level === "PG" ? "Postgraduate" : "Undergraduate"}</p>
                     </div>
-                    {/* Back */}
-                    <div className="flip-card-back">
-                      <div>
-                        <p className="font-serif text-xl text-gold">{f.course}</p>
-                        <p className="mt-1 text-xs text-white/60 uppercase tracking-wide">{f.level === "PG" ? "Postgraduate" : "Undergraduate"}</p>
-                      </div>
-                      <div className="mt-3 space-y-2.5 text-sm">
-                        {f.lowestFee && (
-                          <p className="flex items-center gap-2 text-white/80">
-                            <svg className="h-3.5 w-3.5 shrink-0 text-gold" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" /></svg>
-                            Fees from {inr(f.lowestFee)}
-                          </p>
-                        )}
-                        <p className="flex items-center gap-2 text-white/80">
-                          <svg className="h-3.5 w-3.5 shrink-0 text-gold" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                          Duration: {f.duration}
-                        </p>
-                        <p className="flex items-center gap-2 text-white/80">
-                          <svg className="h-3.5 w-3.5 shrink-0 text-gold" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                          {f.eligibility}
-                        </p>
-                        <p className="flex items-center gap-2 text-white/80">
-                          <svg className="h-3.5 w-3.5 shrink-0 text-gold" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9.348 14.651a3.75 3.75 0 010-5.303m5.304 0a3.75 3.75 0 010 5.303m-7.425 2.122a6.75 6.75 0 010-9.546m9.546 0a6.75 6.75 0 010 9.546M5.106 18.894c-3.808-3.808-3.808-9.98 0-13.789m13.788 0c3.808 3.808 3.808 9.981 0 13.79" /></svg>
-                          {f.modes.map((m) => m === "DISTANCE" ? "Distance" : "Online").join(" & ")} mode
-                        </p>
-                      </div>
-                      <p className="mt-3 text-xs font-semibold text-gold">Explore {f.course} &rarr;</p>
+                    <div className="mt-3 space-y-1.5 text-sm text-white/75">
+                      {f.lowestFee && <p>Fees from {inr(f.lowestFee)}</p>}
+                      <p>Duration: {f.duration}</p>
+                      <p>{f.eligibility}</p>
+                      <p>{f.modes.map((m) => m === "DISTANCE" ? "Distance" : "Online").join(" & ")} mode</p>
                     </div>
-                  </div>
-                </Link>
+                  </>}
+                />
               ))}
             </div>
           </div>
@@ -291,7 +289,7 @@ export default async function HomePage() {
                 <div className="icon-circle-blue mx-auto mb-4">
                   <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d={s.icon} /></svg>
                 </div>
-                <p className="font-serif text-4xl text-gold">{s.num}</p>
+                <p className="font-sans text-4xl font-extrabold tracking-tight text-blue/30">{s.num}</p>
                 <p className="mt-2 font-semibold text-navy">{s.title}</p>
                 <p className="muted mt-1">{s.desc}</p>
               </div>
@@ -310,16 +308,16 @@ export default async function HomePage() {
             </div>
             <p className="font-serif text-2xl text-navy">Not sure which program fits?</p>
             <p className="mt-3 text-gray-600">Five questions. We shortlist programs that match your qualification, budget and goal, and an advisor confirms eligibility.</p>
-            <Link href="/find-course" className="btn-primary mt-6 w-full">Find my course</Link>
+            <Link href="/find-course" className="btn-blue mt-6 w-full">Find my course</Link>
           </div>
-          <div className="rounded-2xl bg-white p-8 border-t-4 border-gold shadow-lg">
-            <div className="icon-circle-orange mb-4">
+          <div className="rounded-2xl bg-white p-8 border-t-4 border-blue shadow-lg">
+            <div className="icon-circle-blue mb-4">
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" /></svg>
             </div>
             <p className="font-serif text-2xl text-navy">Talk to an education expert</p>
             <p className="mt-3 text-gray-600">Real fees, real eligibility, no pressure. Call or WhatsApp {site.phoneDisplay}.</p>
             <div className="mt-6">
-              <LeadCta context={{ source: "home" }} label="Get a call back" className="btn-gold w-full" />
+              <LeadCta context={{ source: "home" }} label="Get a call back" className="btn-blue w-full" />
             </div>
           </div>
         </div>

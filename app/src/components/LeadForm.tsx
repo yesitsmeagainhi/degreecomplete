@@ -85,7 +85,7 @@ export function LeadForm({ context, title = "Get personalised guidance", onDone,
 }
 
 /** Button that opens the lead form in a native dialog. */
-export function LeadCta({ context, label, className = "btn-primary", title }: { context: LeadContext; label: string; className?: string; title?: string }) {
+export function LeadCta({ context, label, className = "btn-blue", title }: { context: LeadContext; label: string; className?: string; title?: string }) {
   const [open, setOpen] = useState(false);
   return (
     <>
